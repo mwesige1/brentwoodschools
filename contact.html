@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us – Brent Wood School</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <!-- FLOATING SOCIAL SIDEBAR -->
+<div class="social-sidebar">
+<a href="https://www.facebook.com/share/1H5aonoJfw/" class="ss-item ss-facebook" target="_blank" aria-label="Facebook">    <i class="ti ti-brand-facebook"></i>
+  </a>
+  <a href="#" class="ss-item ss-twitter" aria-label="Twitter">
+    <i class="ti ti-brand-twitter"></i>
+  </a>
+  <a href="#" class="ss-item ss-instagram" aria-label="Instagram">
+    <i class="ti ti-brand-instagram"></i>
+  </a>
+  <a href="#" class="ss-item ss-youtube" aria-label="YouTube">
+    <i class="ti ti-brand-youtube"></i>
+  </a>
+<a href="https://www.tiktok.com/@brentwood_school?is_from_webapp=1&sender_device=pc" class="ss-item ss-tiktok" target="_blank" aria-label="TikTok">    <i class="ti ti-brand-tiktok"></i>
+  </a>
+  <a href="https://wa.me/256788120443" class="ss-item ss-whatsapp" target="_blank" aria-label="WhatsApp">
+    <i class="ti ti-brand-whatsapp"></i>
+  </a>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="mainNav">
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="nursery.html">Nursery</a></li>
+    <li><a href="primary.html">Primary</a></li>
+    <li><a href="index.html#events">Events</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+<a href="admissions.html" class="nav-admission-badge">
+  <span class="nav-badge-pulse"></span>
+  <div class="nav-badge-inner">
+    <i class="ti ti-school"></i>
+    <div>
+      <strong>Admissions</strong>
+      <span>Now Open!</span>
+    </div>
+  </div>
+</a>
+  <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="nursery.html">Nursery</a>
+  <a href="primary.html">Primary</a>
+  <a href="index.html#events">Events</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+  <a href="admissions.html" class="btn-admissions">
+    <span class="pulse-dot"></span> Admissions Open
+  </a>
+</div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-overlay"></div>
+    <img src="images/contact.JPG" alt="Contact Us" class="page-hero-img"/>
+
+
+  <!-- LOGO — Sitting on hero video -->
+  <img src="images/1x.png" alt="Brent Wood School Logo" class="hero-logo"/>
+
+    <div class="page-hero-content">
+      <h1>Contact Us</h1>
+      <p>We would love to hear from you — get in touch with our team today</p>
+     
+    </div>
+  </section>
+
+  <!-- CONTACT CARDS -->
+  <section class="contact-cards-section">
+    <div class="contact-cards-grid">
+
+      <div class="contact-info-card">
+        <div class="cic-icon cic-blue">
+          <i class="ti ti-map-pin"></i>
+        </div>
+        <h4>Our Location</h4>
+        <p>Kisaasi, Ssebagala Road</p>
+        <p>Off Bukoto Kisaasi Road</p>
+        <p>Kampala, Uganda</p>
+      </div>
+
+      <div class="contact-info-card">
+        <div class="cic-icon cic-green">
+          <i class="ti ti-phone"></i>
+        </div>
+        <h4>Call Us</h4>
+        <a href="tel:+256788120443">+256 788 120 443</a>
+        <a href="tel:+256755361559">+256 755 361 559</a>
+        <a href="tel:+256702002442">+256 702 002 442</a>
+      </div>
+
+      <div class="contact-info-card">
+        <div class="cic-icon cic-red">
+          <i class="ti ti-mail"></i>
+        </div>
+        <h4>Email Us</h4>
+        <a href="mailto:brentwoodschoolug@gmail.com">
+          brentwoodschoolug@gmail.com
+        </a>
+        <p class="cic-note">We respond within 24 hours</p>
+      </div>
+
+      <div class="contact-info-card">
+        <div class="cic-icon cic-yellow">
+          <i class="ti ti-clock"></i>
+        </div>
+        <h4>Office Hours</h4>
+        <p>Monday – Friday</p>
+        <p>7:30 AM – 5:00 PM</p>
+        <p>Saturday: 8:00 AM – 1:00 PM</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT FORM + MAP -->
+  <section class="contact-main-section">
+    <div class="contact-main-grid">
+
+      <!-- Contact Form -->
+      <div class="contact-form-wrap">
+        <div class="contact-form-header">
+          <h2>Send Us a Message</h2>
+          <p>Fill in the form and our team will get back to you as soon as possible</p>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contactName">Full Name <span>*</span></label>
+              <input type="text" id="contactName" placeholder="Your full name" required/>
+            </div>
+            <div class="form-group">
+              <label for="contactPhone">Phone Number <span>*</span></label>
+              <input type="tel" id="contactPhone" placeholder="+256 700 000 000" required/>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="contactEmail">Email Address</label>
+            <input type="email" id="contactEmail" placeholder="your@email.com"/>
+          </div>
+
+          <div class="form-group">
+            <label for="contactSubject">Subject <span>*</span></label>
+            <select id="contactSubject" required>
+              <option value="" disabled selected>Select subject</option>
+              <option>General Enquiry</option>
+              <option>Admissions</option>
+              <option>Fee Structure</option>
+              <option>Transport</option>
+              <option>School Events</option>
+              <option>Complaint or Feedback</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="contactMessage">Message <span>*</span></label>
+            <textarea
+              id="contactMessage"
+              rows="5"
+              placeholder="Write your message here..."
+              required>
+            </textarea>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" class="btn-submit">
+              <i class="ti ti-send"></i> Send Message
+            </button>
+            <p class="form-note">
+              <i class="ti ti-info-circle"></i>
+              We will respond within 24 hours during school days.
+            </p>
+          </div>
+
+        </form>
+
+        <!-- Success -->
+        <div class="form-success" id="contactSuccess">
+          <i class="ti ti-circle-check"></i>
+          <h3>Message Sent!</h3>
+          <p>Thank you for reaching out. Our team will get back to you within 24 hours.</p>
+          <a href="index.html" class="btn-section">
+            Back to Home <i class="ti ti-arrow-right"></i>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Map -->
+      <div class="contact-map-wrap">
+        <div class="contact-map-header">
+          <h2>Find Us</h2>
+          <p>We are located in Kisaasi, easily accessible from Bukoto and the Northern Bypass</p>
+        </div>
+        <div class="contact-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7572!2d32.5899!3d0.3476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwMjAnNTEuNCJOIDMywrAzNSczNi40IkU!5e0!3m2!1sen!2sug!4v1234567890"
+            width="100%"
+            height="100%"
+            style="border:0; border-radius:12px;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Brent Wood School Location">
+          </iframe>
+        </div>
+        <div class="contact-directions">
+          <h4><i class="ti ti-navigation"></i> How to Find Us</h4>
+          <ul>
+            <li><i class="ti ti-point"></i> From Bukoto — take Kisaasi Road heading north</li>
+            <li><i class="ti ti-point"></i> From Northern Bypass — exit at Kisaasi junction</li>
+            <li><i class="ti ti-point"></i> Turn onto Ssebagala Road — school is 200m on the left</li>
+            <li><i class="ti ti-point"></i> Look for the Brent Wood School signpost</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SOCIAL MEDIA -->
+  <section class="social-section">
+    <div class="section-header">
+      <h2>Follow Us</h2>
+      <p>Stay connected and up to date with life at Brent Wood School</p>
+    </div>
+    <div class="social-grid">
+
+      <a href="#" class="social-card sc-facebook">
+        <i class="ti ti-brand-facebook"></i>
+        <span>Facebook</span>
+        <p>Follow us for daily updates, photos and school news</p>
+      </a>
+
+      <a href="#" class="social-card sc-instagram">
+        <i class="ti ti-brand-instagram"></i>
+        <span>Instagram</span>
+        <p>See the best moments from our school life and events</p>
+      </a>
+
+      <a href="#" class="social-card sc-twitter">
+        <i class="ti ti-brand-twitter"></i>
+        <span>Twitter / X</span>
+        <p>Quick updates, announcements and school highlights</p>
+      </a>
+
+      <a href="https://wa.me/256788120443" class="social-card sc-whatsapp" target="_blank">
+        <i class="ti ti-brand-whatsapp"></i>
+        <span>WhatsApp</span>
+        <p>Chat directly with our admissions team right now</p>
+      </a>
+
+    </div>
+  </section>
+
+ <!-- ⑪ FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-col">
+        <h4>About Us</h4>
+        <p class="footer-about">
+          Providing quality education and nurturing every child's potential in a safe,
+          inclusive and stimulating environment since our founding.
+        </p>
+    
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <ul class="footer-contact">
+          <li>
+            <i class="ti ti-map-pin"></i>
+            <span>Kisaasi, Ssebagala Road, Off Bukoto Kisaasi Road, Kampala, Uganda</span>
+          </li>
+          <li>
+            <i class="ti ti-phone"></i>
+            <span>+256 788 120 443 / +256 755 361 559</span>
+          </li>
+          <li>
+            <i class="ti ti-mail"></i>
+            <span>brentwoodschoolug@gmail.com</span>
+          </li>
+        </ul>
+      </div>
+   
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 BrentWood School – Nursery &amp; Primary. All rights reserved.</p>
+      <div class="footer-designed">
+        <span>Designed &amp; Developed by</span>
+        <div class="designer-info">
+         
+          <div>
+            <strong>Eng. Patrick</strong>
+            <a href="tel:+256702002442">
+              <i class="ti ti-phone"></i> 0702 002 442
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+ 
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="ti ti-arrow-up"></i>
+  </button>
+
+  <script src="main.js"></script>
+</body>
+</html>

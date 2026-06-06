@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery – Brent Wood School</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <!-- FLOATING SOCIAL SIDEBAR -->
+  <div class="social-sidebar">
+<a href="https://www.facebook.com/share/1H5aonoJfw/" class="ss-item ss-facebook" target="_blank" aria-label="Facebook">      <i class="ti ti-brand-facebook"></i>
+    </a>
+    <a href="#" class="ss-item ss-twitter" aria-label="Twitter">
+      <i class="ti ti-brand-twitter"></i>
+    </a>
+    <a href="#" class="ss-item ss-instagram" aria-label="Instagram">
+      <i class="ti ti-brand-instagram"></i>
+    </a>
+    <a href="#" class="ss-item ss-youtube" aria-label="YouTube">
+      <i class="ti ti-brand-youtube"></i>
+    </a>
+<a href="https://www.tiktok.com/@brentwood_school?is_from_webapp=1&sender_device=pc" class="ss-item ss-tiktok" target="_blank" aria-label="TikTok">      <i class="ti ti-brand-tiktok"></i>
+    </a>
+    <a href="https://wa.me/256788120443" class="ss-item ss-whatsapp" target="_blank" aria-label="WhatsApp">
+      <i class="ti ti-brand-whatsapp"></i>
+    </a>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="mainNav">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="nursery.html">Nursery</a></li>
+      <li><a href="primary.html">Primary</a></li>
+      <li><a href="index.html#events">Events</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  <a href="admissions.html" class="nav-admission-badge">
+  <span class="nav-badge-pulse"></span>
+  <div class="nav-badge-inner">
+    <i class="ti ti-school"></i>
+    <div>
+      <strong>Admissions</strong>
+      <span>Now Open!</span>
+    </div>
+  </div>
+</a>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="nursery.html">Nursery</a>
+    <a href="primary.html">Primary</a>
+    <a href="index.html#events">Events</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+    <a href="admissions.html" class="btn-admissions">
+      <span class="pulse-dot"></span> Admissions Open
+    </a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-overlay"></div>
+    <img src="images/gullery.JPG" alt="Gallery" class="page-hero-img"/>
+    <img src="images/1x.png" alt="Brent Wood School Logo" class="hero-logo"/>
+    <div class="page-hero-content">
+      <h1>School Gallery</h1>
+      <p>Moments that define us — from the classroom to the playground</p>
+    </div>
+  </section>
+
+  <!-- FILTER TABS -->
+  <section class="gallery-page-section">
+    <div class="gallery-filter-bar">
+      <button class="gf-btn active" data-filter="all">All</button>
+      <button class="gf-btn" data-filter="videos">Videos</button>
+      <button class="gf-btn" data-filter="nursery">Nursery</button>
+      <button class="gf-btn" data-filter="primary">Primary</button>
+      <button class="gf-btn" data-filter="sports">Sports</button>
+      <button class="gf-btn" data-filter="events">Events</button>
+      <button class="gf-btn" data-filter="arts">Arts</button>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="gallery-page-grid" id="galleryPageGrid">
+
+      <!-- ── VIDEOS ── -->
+      <div class="gp-item gp-video-item" data-category="videos">
+        <video muted loop playsinline class="gp-video">
+          <source src="images/1.mp4" type="video/mp4"/>
+        </video>
+        <div class="gp-overlay gp-video-overlay">
+          <div class="gp-play-btn"><i class="ti ti-player-play"></i></div>
+          <span>Play Video</span>
+        </div>
+      </div>
+        <div class="gp-item gp-video-item" data-category="videos">
+        <video muted loop playsinline class="gp-video">
+          <source src="images/2.mp4" type="video/mp4"/>
+        </video>
+        <div class="gp-overlay gp-video-overlay">
+          <div class="gp-play-btn"><i class="ti ti-player-play"></i></div>
+          <span>Play Video</span>
+        </div>
+      </div>
+        
+      <!-- ADD MORE VIDEOS HERE — just copy the block above and change the src -->
+      <!-- Example:
+      <div class="gp-item gp-video-item" data-category="videos">
+        <video muted loop playsinline class="gp-video">
+          <source src="images/video2.mp4" type="video/mp4"/>
+        </video>
+        <div class="gp-overlay gp-video-overlay">
+          <div class="gp-play-btn"><i class="ti ti-player-play"></i></div>
+          <span>Play Video</span>
+        </div>
+      </div>
+      -->
+
+      <!-- ── PHOTOS ── -->
+      <div class="gp-item" data-category="nursery">
+        <img src="images/nursery/_DSC0074.JPG" alt="Nursery"/>
+        <div class="gp-overlay">
+          <i class="ti ti-zoom-in"></i>
+          <span>Nursery</span>
+        </div>
+      </div>
+
+      <div class="gp-item" data-category="nursery">
+        <img src="images/nursery/_DSC0154 - Copy.JPG" alt="Nursery"/>
+        <div class="gp-overlay">
+          <i class="ti ti-zoom-in"></i>
+          <span>Nursery</span>
+        </div>
+      </div>
+
+      <div class="gp-item" data-category="primary">
+        <img src="images/primary/142A5286 - Copy.JPG" alt="Primary"/>
+        <div class="gp-overlay">
+          <i class="ti ti-zoom-in"></i>
+          <span>Primary</span>
+        </div>
+      </div>
+
+      <div class="gp-item" data-category="primary">
+        <img src="images/primary/142A5287 - Copy.JPG" alt="Primary"/>
+        <div class="gp-overlay">
+          <i class="ti ti-zoom-in"></i>
+          <span>Primary</span>
+        </div>
+      </div>
+
+      <div class="gp-item" data-category="sports">
+        <img src="images/sports/@ (16).JPG" alt="Sports"/>
+        <div class="gp-overlay">
+          <i class="ti ti-zoom-in"></i>
+          <span>Sports</span>
+        </div>
+      </div>
+
+      <div class="gp-item" data-category="events">
+        <img src="images/events/_DSC0189 - Copy.JPG" alt="Events"/>
+        <div class="gp-overlay">
+          <i class="ti ti-zoom-in"></i>
+          <span>Events</span>
+        </div>
+      </div>
+
+      <div class="gp-item" data-category="events">
+        <img src="images/events/_G9A9307.jpg" alt="Events"/>
+        <div class="gp-overlay">
+          <i class="ti ti-zoom-in"></i>
+          <span>Events</span>
+        </div>
+      </div>
+
+      <div class="gp-item" data-category="arts">
+        <img src="images/events/DSC_6090 copy.JPG" alt="Arts"/>
+        <div class="gp-overlay">
+          <i class="ti ti-zoom-in"></i>
+          <span>Arts</span>
+        </div>
+      </div>
+
+      <div class="gp-item" data-category="nursery">
+        <img src="images/nursery/DSC_0047 copy - Copy.JPG" alt="Nursery"/>
+        <div class="gp-overlay">
+          <i class="ti ti-zoom-in"></i>
+          <span>Nursery</span>
+        </div>
+      </div>
+
+      <div class="gp-item" data-category="primary">
+        <img src="images/primary/142A5290 - Copy.JPG" alt="Primary"/>
+        <div class="gp-overlay">
+          <i class="ti ti-zoom-in"></i>
+          <span>Primary</span>
+        </div>
+      </div>
+
+      <div class="gp-item" data-category="sports">
+        <img src="images/sports/DSC_0203 - Copy.JPG" alt="Sports"/>
+        <div class="gp-overlay">
+          <i class="ti ti-zoom-in"></i>
+          <span>Sports</span>
+        </div>
+      </div>
+
+      <div class="gp-item" data-category="events">
+        <img src="images/events/IMG_9674.JPG" alt="Events"/>
+        <div class="gp-overlay">
+          <i class="ti ti-zoom-in"></i>
+          <span>Events</span>
+        </div>
+      </div>
+
+      <div class="gp-item" data-category="nursery">
+        <img src="images/nursery/DSC_0168 copy.JPG" alt="Nursery"/>
+        <div class="gp-overlay">
+          <i class="ti ti-zoom-in"></i>
+          <span>Nursery</span>
+        </div>
+      </div>
+
+      <div class="gp-item" data-category="primary">
+        <img src="images/primary/BW (26).jpg" alt="Primary"/>
+        <div class="gp-overlay">
+          <i class="ti ti-zoom-in"></i>
+          <span>Primary</span>
+        </div>
+      </div>
+
+      <div class="gp-item" data-category="arts">
+        <img src="images/sports/VIR_6975.JPG" alt="Arts"/>
+        <div class="gp-overlay">
+          <i class="ti ti-zoom-in"></i>
+          <span>Arts</span>
+        </div>
+      </div>
+
+      <div class="gp-item" data-category="sports">
+        <img src="images/sports/PEM_1478.JPG" alt="Sports"/>
+        <div class="gp-overlay">
+          <i class="ti ti-zoom-in"></i>
+          <span>Sports</span>
+        </div>
+      </div>
+
+      <div class="gp-item" data-category="nursery">
+        <img src="images/n7.JPG" alt="Nursery"/>
+        <div class="gp-overlay">
+          <i class="ti ti-zoom-in"></i>
+          <span>Nursery</span>
+        </div>
+      </div>
+
+      <div class="gp-item" data-category="nursery">
+        <img src="images/n10.JPG" alt="Nursery"/>
+        <div class="gp-overlay">
+          <i class="ti ti-zoom-in"></i>
+          <span>Nursery</span>
+        </div>
+      </div>
+
+      <div class="gp-item" data-category="primary">
+        <img src="images/primary/pp2.JPG" alt="Primary"/>
+        <div class="gp-overlay">
+          <i class="ti ti-zoom-in"></i>
+          <span>Primary</span>
+        </div>
+      </div>
+
+      <div class="gp-item" data-category="primary">
+        <img src="images/primary/_G9A9291 - Copy - Copy.jpg" alt="Primary"/>
+        <div class="gp-overlay">
+          <i class="ti ti-zoom-in"></i>
+          <span>Primary</span>
+        </div>
+      </div>
+
+      <div class="gp-item" data-category="sports">
+        <img src="images/sports/swim.JPG" alt="Sports"/>
+        <div class="gp-overlay">
+          <i class="ti ti-zoom-in"></i>
+          <span>Sports</span>
+        </div>
+      </div>
+
+      <div class="gp-item" data-category="events">
+        <img src="images/events/IMG_9649.JPG" alt="Events"/>
+        <div class="gp-overlay">
+          <i class="ti ti-zoom-in"></i>
+          <span>Events</span>
+        </div>
+      </div>
+
+      <div class="gp-item" data-category="events">
+        <img src="images/events/IMG_9674.JPG" alt="Events"/>
+        <div class="gp-overlay">
+          <i class="ti ti-zoom-in"></i>
+          <span>Events</span>
+        </div>
+      </div>
+
+      <div class="gp-item" data-category="arts">
+        <img src="images/events/IMG_9680.JPG" alt="Arts"/>
+        <div class="gp-overlay">
+          <i class="ti ti-zoom-in"></i>
+          <span>Arts</span>
+        </div>
+      </div>
+
+      <div class="gp-item" data-category="nursery">
+        <img src="images/n2.JPG" alt="Nursery"/>
+        <div class="gp-overlay">
+          <i class="ti ti-zoom-in"></i>
+          <span>Nursery</span>
+        </div>
+      </div>
+
+      <div class="gp-item" data-category="primary">
+        <img src="images/p5.JPG" alt="Primary"/>
+        <div class="gp-overlay">
+          <i class="ti ti-zoom-in"></i>
+          <span>Primary</span>
+        </div>
+      </div>
+
+      <div class="gp-item" data-category="sports">
+        <img src="images/sports/DSC_0031 - Copy.JPG" alt="Sports"/>
+        <div class="gp-overlay">
+          <i class="ti ti-zoom-in"></i>
+          <span>Sports</span>
+        </div>
+      </div>
+
+      <div class="gp-item" data-category="events">
+        <img src="images/events/IMG_2808 - Copy.JPG" alt="Events"/>
+        <div class="gp-overlay">
+          <i class="ti ti-zoom-in"></i>
+          <span>Events</span>
+        </div>
+      </div>
+
+      <div class="gp-item" data-category="nursery">
+        <img src="images/n.JPG" alt="Nursery"/>
+        <div class="gp-overlay">
+          <i class="ti ti-zoom-in"></i>
+          <span>Nursery</span>
+        </div>
+      </div>
+
+      <div class="gp-item" data-category="primary">
+        <img src="images/prime.JPG" alt="Primary"/>
+        <div class="gp-overlay">
+          <i class="ti ti-zoom-in"></i>
+          <span>Primary</span>
+        </div>
+      </div>
+
+      <div class="gp-item" data-category="arts">
+        <img src="images/sports/VIR_6891.JPG" alt="Arts"/>
+        <div class="gp-overlay">
+          <i class="ti ti-zoom-in"></i>
+          <span>Arts</span>
+        </div>
+      </div>
+
+      <div class="gp-item" data-category="sports">
+        <img src="images/sports/VIR_6892.JPG" alt="Sports"/>
+        <div class="gp-overlay">
+          <i class="ti ti-zoom-in"></i>
+          <span>Sports</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PHOTO LIGHTBOX -->
+  <div class="lightbox" id="pageLightbox">
+    <button class="lb-close" id="pageLbClose" aria-label="Close">
+      <i class="ti ti-x"></i>
+    </button>
+    <button class="lb-nav lb-prev" id="pageLbPrev" aria-label="Previous">
+      <i class="ti ti-chevron-left"></i>
+    </button>
+    <div class="lb-img-wrap">
+      <img src="" alt="Gallery image" id="pageLbImage"/>
+    </div>
+    <button class="lb-nav lb-next" id="pageLbNext" aria-label="Next">
+      <i class="ti ti-chevron-right"></i>
+    </button>
+    <div class="lb-counter" id="pageLbCounter">1 / 16</div>
+  </div>
+
+  <!-- VIDEO MODAL -->
+  <div class="video-modal" id="videoModal">
+    <div class="video-modal-inner">
+      <button class="video-modal-close" id="videoModalClose" aria-label="Close">
+        <i class="ti ti-x"></i>
+      </button>
+      <video controls autoplay class="video-modal-player" id="videoModalPlayer">
+        <source src="" type="video/mp4" id="videoModalSource"/>
+      </video>
+    </div>
+  </div>
+
+   <!-- ⑪ FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-col">
+        <h4>About Us</h4>
+        <p class="footer-about">
+          Providing quality education and nurturing every child's potential in a safe,
+          inclusive and stimulating environment since our founding.
+        </p>
+    
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <ul class="footer-contact">
+          <li>
+            <i class="ti ti-map-pin"></i>
+            <span>Kisaasi, Ssebagala Road, Off Bukoto Kisaasi Road, Kampala, Uganda</span>
+          </li>
+          <li>
+            <i class="ti ti-phone"></i>
+            <span>+256 788 120 443 / +256 755 361 559</span>
+          </li>
+          <li>
+            <i class="ti ti-mail"></i>
+            <span>brentwoodschoolug@gmail.com</span>
+          </li>
+        </ul>
+      </div>
+   
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 BrentWood School – Nursery &amp; Primary. All rights reserved.</p>
+      <div class="footer-designed">
+        <span>Designed &amp; Developed by</span>
+        <div class="designer-info">
+         
+          <div>
+            <strong>Eng. Patrick</strong>
+            <a href="tel:+256702002442">
+              <i class="ti ti-phone"></i> 0702 002 442
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="ti ti-arrow-up"></i>
+  </button>
+
+  <script src="main.js"></script>
+</body>
+</html>
