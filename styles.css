@@ -2005,20 +2005,6 @@ body {
 .sc-whatsapp           { background: #25d366; }
 
 /* ─────────────────────────────────────────
-   SCROLL REVEAL
-───────────────────────────────────────── */
-.reveal {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.reveal.revealed {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* ─────────────────────────────────────────
    RESPONSIVE
 ───────────────────────────────────────── */
 @media (max-width: 1100px) {
@@ -2266,4 +2252,12 @@ body {
   .gs-strip-grid         { grid-template-columns: repeat(2, 1fr); }
   .gallery-page-grid     { grid-template-columns: repeat(2, 1fr); }
   .section-header h2     { font-size: 22px; }
+}
+/* Image loading placeholder */
+.gp-item {
+  background: #f0f0f0;
+}
+
+.gp-item img {
+  transition: opacity 0.3s ease;
 }

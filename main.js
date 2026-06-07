@@ -227,25 +227,7 @@ if (eventsTrack) {
   window.addEventListener('resize', () => goToEv(evIndex));
 }
 
-/* ── 6. SCROLL REVEAL ANIMATION ── */
 
-const revealElements = document.querySelectorAll(
-  '.feature-card, .school-section, .life-card, .event-card, .section-header, .mission-inner'
-);
-
-const revealObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('revealed');
-      revealObserver.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.12 });
-
-revealElements.forEach(el => {
-  el.classList.add('reveal');
-  revealObserver.observe(el);
-});
 
 /* ── 7. ACTIVE NAV LINK on scroll ── */
 
