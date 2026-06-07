@@ -263,7 +263,7 @@ body {
 }
 
 /* Hamburger */
-/* Remove red from hamburger */
+
 .hamburger {
   display: none;
   flex-direction: column;
@@ -277,6 +277,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  color: #e2e8f0;
 }
 
 .hamburger:hover {
