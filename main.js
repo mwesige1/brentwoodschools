@@ -323,3 +323,20 @@ document.addEventListener('keydown', (e) => {
 });
 
 window.openVideoModal = openVideoModal;
+
+
+
+/* ── MOBILE SOCIAL SIDEBAR TOGGLE ── */
+const socialToggle       = document.getElementById('socialToggle');
+const mobileSocialSidebar = document.getElementById('mobileSocialSidebar');
+let socialOpen = false;
+
+if (socialToggle && mobileSocialSidebar) {
+  socialToggle.addEventListener('click', () => {
+    socialOpen = !socialOpen;
+    mobileSocialSidebar.classList.toggle('open', socialOpen);
+    socialToggle.innerHTML = socialOpen
+      ? '<i class="ti ti-x"></i>'
+      : '<i class="ti ti-share"></i>';
+  });
+}
