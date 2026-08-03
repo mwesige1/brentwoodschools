@@ -3,328 +3,429 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nursery Section – Brent Wood School</title>
+  <title>Nursery Section – Brentwood School</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Nunito:wght@400;600;700&family=Kaushan+Script&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
 
   <!-- FLOATING SOCIAL SIDEBAR -->
-<div class="social-sidebar">
-<a href="https://www.facebook.com/share/1H5aonoJfw/" class="ss-item ss-facebook" target="_blank" aria-label="Facebook">    <i class="ti ti-brand-facebook"></i>
-  </a>
-  <a href="#" class="ss-item ss-twitter" aria-label="Twitter">
-    <i class="ti ti-brand-twitter"></i>
-  </a>
-  <a href="#" class="ss-item ss-instagram" aria-label="Instagram">
-    <i class="ti ti-brand-instagram"></i>
-  </a>
-  <a href="#" class="ss-item ss-youtube" aria-label="YouTube">
-    <i class="ti ti-brand-youtube"></i>
-  </a>
-<a href="https://www.tiktok.com/@brentwood_school?is_from_webapp=1&sender_device=pc" class="ss-item ss-tiktok" target="_blank" aria-label="TikTok">    <i class="ti ti-brand-tiktok"></i>
-  </a>
-  <a href="https://wa.me/256788120443" class="ss-item ss-whatsapp" target="_blank" aria-label="WhatsApp">
-    <i class="ti ti-brand-whatsapp"></i>
-  </a>
-</div>
+  <div class="social-sidebar">
+    <a href="https://www.facebook.com/share/1H5aonoJfw/" class="ss-item ss-facebook" target="_blank" aria-label="Facebook"><i class="ti ti-brand-facebook"></i></a>
+    <a href="#" class="ss-item ss-twitter" aria-label="Twitter"><i class="ti ti-brand-twitter"></i></a>
+    <a href="#" class="ss-item ss-instagram" aria-label="Instagram"><i class="ti ti-brand-instagram"></i></a>
+    <a href="#" class="ss-item ss-youtube" aria-label="YouTube"><i class="ti ti-brand-youtube"></i></a>
+    <a href="https://www.tiktok.com/@brentwood_school?is_from_webapp=1&sender_device=pc" class="ss-item ss-tiktok" target="_blank" aria-label="TikTok"><i class="ti ti-brand-tiktok"></i></a>
+    <a href="https://wa.me/256788120443" class="ss-item ss-whatsapp" target="_blank" aria-label="WhatsApp"><i class="ti ti-brand-whatsapp"></i></a>
+  </div>
 
+  <!-- MOBILE SOCIAL TOGGLE -->
+  <button class="social-sidebar-toggle" id="socialToggle" aria-label="Social media">
+    <i class="ti ti-share"></i>
+  </button>
 
-<!-- MOBILE SOCIAL TOGGLE -->
-<button class="social-sidebar-toggle" id="socialToggle" aria-label="Social media">
-  <i class="ti ti-share"></i>
-</button>
+  <!-- MOBILE SOCIAL POPUP -->
+  <div class="social-sidebar-mobile" id="mobileSocialSidebar">
+    <a href="https://www.facebook.com/share/1H5aonoJfw/" target="_blank" style="background:#1877f2" aria-label="Facebook"><i class="ti ti-brand-facebook"></i></a>
+    <a href="#" target="_blank" style="background:#1da1f2" aria-label="Twitter"><i class="ti ti-brand-twitter"></i></a>
+    <a href="#" target="_blank" style="background:#e1306c" aria-label="Instagram"><i class="ti ti-brand-instagram"></i></a>
+    <a href="#" target="_blank" style="background:#ff0000" aria-label="YouTube"><i class="ti ti-brand-youtube"></i></a>
+    <a href="https://www.tiktok.com/@brentwood_school?is_from_webapp=1&sender_device=pc" target="_blank" style="background:#010101" aria-label="TikTok"><i class="ti ti-brand-tiktok"></i></a>
+    <a href="https://wa.me/256788120443" target="_blank" style="background:#25d366" aria-label="WhatsApp"><i class="ti ti-brand-whatsapp"></i></a>
+  </div>
 
-<!-- MOBILE SOCIAL POPUP -->
-<div class="social-sidebar-mobile" id="mobileSocialSidebar">
-  <a href="https://www.facebook.com/share/1H5aonoJfw/" target="_blank" style="background:#1877f2" aria-label="Facebook"><i class="ti ti-brand-facebook"></i></a>
-  <a href="#" target="_blank" style="background:#1da1f2" aria-label="Twitter"><i class="ti ti-brand-twitter"></i></a>
-  <a href="#" target="_blank" style="background:#e1306c" aria-label="Instagram"><i class="ti ti-brand-instagram"></i></a>
-  <a href="#" target="_blank" style="background:#ff0000" aria-label="YouTube"><i class="ti ti-brand-youtube"></i></a>
-  <a href="https://www.tiktok.com/@brentwood_school?is_from_webapp=1&sender_device=pc" target="_blank" style="background:#010101" aria-label="TikTok"><i class="ti ti-brand-tiktok"></i></a>
-  <a href="https://wa.me/256788120443" target="_blank" style="background:#25d366" aria-label="WhatsApp"><i class="ti ti-brand-whatsapp"></i></a>
-</div>
+  <!-- ══════════════════════════════════════
+       TOPBAR
+  ══════════════════════════════════════ -->
+  <div class="bw-shell">
+    <div class="bw-topbar">
+      <a href="index.html" class="bw-logo">
+        <img src="images/1x.png" alt="Brentwood School"/>
+      </a>
+      <nav class="bw-nav" id="mainNav">
+        <ul class="nav-links">
+          <li><a href="index.html"><i class="ti ti-home"></i> HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="nursery.html" class="active">NURSERY SECTION</a></li>
+          <li><a href="primary.html">PRIMARY SECTION</a></li>
+          <li><a href="admissions.html">ADMISSION</a></li>
+          <li><a href="index.html#events">EVENTS</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a href="contact.html">CONTACTS</a></li>
+        </ul>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
 
- <!-- NAVBAR -->
-<nav class="navbar" id="mainNav">
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="nursery.html" class="active">Nursery</a></li>
-    <li><a href="primary.html">Primary</a></li>
-    <li><a href="index.html#events">Events</a></li>
-    <li><a href="gallery.html">Gallery</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-<a href="admissions.html" class="nav-admission-badge">
-  <span class="nav-badge-pulse"></span>
-  <div class="nav-badge-inner">
-    <i class="ti ti-school"></i>
-    <div>
-      <strong>Admissions</strong>
-      <span>Now Open!</span>
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="nursery.html">Nursery Section</a>
+      <a href="primary.html">Primary Section</a>
+      <a href="admissions.html">Admission</a>
+      <a href="index.html#events">Events</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contacts</a>
+      <a href="boarding.html">Boarding Section</a>
     </div>
   </div>
-</a>
-  <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
-    <span></span><span></span><span></span>
-  </button>
-</nav>
 
-<!-- MOBILE MENU -->
-<div class="mobile-menu" id="mobileMenu">
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="nursery.html">Nursery</a>
-  <a href="primary.html">Primary</a>
-  <a href="index.html#events">Events</a>
-  <a href="gallery.html">Gallery</a>
-  <a href="contact.html">Contact</a>
-  <a href="admissions.html" class="btn-admissions">
-    <span class="pulse-dot"></span> Admissions Open
-  </a>
-</div>
-
-  <!-- PAGE HERO -->
-  <section class="page-hero">
-    <div class="page-hero-overlay"></div>
-    <img src="images/nurse.JPG" alt="Nursery Section" class="page-hero-img"/>
-
-
-  <!-- LOGO — Sitting on hero video -->
-  <img src="images/1x.png" alt="Brent Wood School Logo" class="hero-logo"/>
-
-    <div class="page-hero-content">
-      <h1>Nursery Section</h1>
-      <p>Where little minds grow, explore and shine every day</p>
-      
+  <!-- ══════════════════════════════════════
+       PAGE BANNER
+  ══════════════════════════════════════ -->
+  <section class="pg-banner">
+    <div class="pg-banner-inner">
+      <span class="pg-script">Where every journey begins</span>
+      <h1>NURSERY SECTION</h1>
+      <span class="pg-rule"></span>
+      <div class="pg-crumb">
+        <a href="index.html">Home</a>
+        <i class="ti ti-chevron-right"></i>
+        <span>Nursery Section</span>
+      </div>
     </div>
   </section>
 
-  <!-- INTRO -->
-  <section class="nursery-intro">
-    <div class="ni-grid">
-      <div class="ni-content">
-        <span class="ss-label">Our Nursery</span>
-        <h2>Building Foundations for Life</h2>
-        <p>
-          At Brent Wood School Nursery, we believe that the early years of a child's
-          life are the most important. Our dedicated nursery teachers create a warm,
-          safe and stimulating environment where children aged 2 to 5 can flourish.
-        </p>
-        <p>
-          We focus on the whole child — language, cognitive growth, fine and gross
-          motor skills, and social emotional development so every child becomes a
-          confident and joyful learner ready for the next stage of education.
-        </p>
-        <a href="admissions.html" class="btn-section">
-          Enrol Your Child <i class="ti ti-arrow-right"></i>
-        </a>
+  <!-- ══════════════════════════════════════
+       INTRO
+  ══════════════════════════════════════ -->
+  <section class="ab-intro">
+    <div class="ab-card">
+
+      <div class="ab-tags">
+        <span class="ab-tag"><i class="ti ti-baby-carriage"></i> Ages 3 &ndash; 5 Years</span>
+        <span class="ab-tag"><i class="ti ti-puzzle"></i> Play-Based Learning</span>
+        <span class="ab-tag"><i class="ti ti-certificate"></i> National Competency-Based Curriculum</span>
       </div>
-      <div class="ni-image">
-        <img src="images/n12.JPG" alt="Nursery children learning"/>
-        <div class="ni-floating-card">
-          <i class="ti ti-heart"></i>
-          <div>
-            <strong>Happy Learners</strong>
-            <span>Ages 2 – 5 Years</span>
+
+      <span class="ab-script">The early years matter most</span>
+      <h2>A JOYFUL START TO LEARNING</h2>
+      <span class="ab-rule"></span>
+
+      <div class="nu-split">
+        <div class="ab-body">
+          <p>At Brentwood School Nursery, we believe that the early years lay the foundation for a lifetime of learning. We provide a warm, safe, and stimulating environment where children aged 3 to 5 years are encouraged to explore, discover, and grow with confidence.</p>
+
+          <p>Our dedicated and caring teachers nurture every child's intellectual, social, emotional, physical, and creative development through play-based, hands-on, and interactive learning experiences. Guided by the National Competency-Based Curriculum, we inspire curiosity, independence, and a lifelong love of learning while ensuring every child is prepared for a successful transition to primary school.</p>
+
+          <p>Through these meaningful learning experiences, children develop confidence, creativity, critical thinking, problem-solving skills, and positive values in a nurturing environment where every child is valued, respected, and encouraged to reach their full potential.</p>
+        </div>
+
+        <div class="nu-figure">
+          <img src="images/n12.JPG" alt="Nursery children learning"/>
+          <div class="nu-figure-card">
+            <i class="ti ti-heart-filled"></i>
+            <div>
+              <strong>Happy Learners</strong>
+              <span>Ages 3 &ndash; 5 Years</span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- WHAT WE OFFER -->
-  <section class="offer-section">
-    <div class="section-header">
-      <h2>What We Offer in Nursery</h2>
-      <p>A rich and balanced early childhood programme</p>
-    </div>
-    <div class="offer-grid">
-
-      <div class="offer-card">
-        <div class="offer-icon oi-blue">
-          <i class="ti ti-building-blocks"></i>
-        </div>
-        <h4>Play-Based Learning</h4>
-        <p>Children learn best through play. Our structured play activities develop creativity, problem solving and social skills.</p>
-      </div>
-
-      <div class="offer-card">
-        <div class="offer-icon oi-green">
-          <i class="ti ti-abc"></i>
-        </div>
-        <h4>Literacy &amp; Numeracy</h4>
-        <p>Early reading, writing and number work introduced in a fun, engaging and age-appropriate way.</p>
-      </div>
-
-      <div class="offer-card">
-        <div class="offer-icon oi-red">
-          <i class="ti ti-palette"></i>
-        </div>
-        <h4>Arts &amp; Creativity</h4>
-        <p>Painting, drawing, music and crafts help children express themselves and develop fine motor skills.</p>
-      </div>
-
-      <div class="offer-card">
-        <div class="offer-icon oi-yellow">
-          <i class="ti ti-run"></i>
-        </div>
-        <h4>Physical Education</h4>
-        <p>Daily outdoor play and structured PE sessions build gross motor skills, coordination and healthy habits.</p>
-      </div>
-
-      <div class="offer-card">
-        <div class="offer-icon oi-blue">
-          <i class="ti ti-users"></i>
-        </div>
-        <h4>Social Development</h4>
-        <p>Group activities and circle time teach children to share, cooperate and build meaningful friendships.</p>
-      </div>
-
-      <div class="offer-card">
-        <div class="offer-icon oi-green">
-          <i class="ti ti-salad"></i>
-        </div>
-        <h4>Healthy Meals</h4>
-        <p>Nutritious, balanced meals and snacks served daily to fuel growing bodies and developing minds.</p>
+      <div class="ab-quote">
+        <i class="ti ti-quote"></i>
+        <p>At Brentwood, we don't just prepare children for school — we inspire happy, confident, curious, and capable learners who are ready to thrive in the next stage of their educational journey.</p>
       </div>
 
     </div>
   </section>
 
-  <!-- NURSERY CLASSES -->
-  <section class="classes-section">
-    <div class="section-header">
-      <h2>Nursery Classes</h2>
-      <p>Structured learning levels designed for each stage of early childhood</p>
+  <!-- ══════════════════════════════════════
+       OUR CLASSES
+  ══════════════════════════════════════ -->
+  <section class="nu-classes">
+    <div class="ab-sec-head">
+      <span class="ab-script">Our classes</span>
+      <h2>THREE STAGES OF DISCOVERY</h2>
+      <span class="ab-rule ab-rule-center"></span>
     </div>
-    <div class="classes-grid">
 
-      <div class="class-card cc-blue">
-        <div class="class-age">2 – 3 Yrs</div>
-        <h3>Baby Class</h3>
-        <p>Introduction to school life through play, songs, stories and simple routines in a caring environment.</p>
-        <ul>
-          <li><i class="ti ti-check"></i> Sensory play activities</li>
-          <li><i class="ti ti-check"></i> Basic communication skills</li>
-          <li><i class="ti ti-check"></i> Toilet training support</li>
-          <li><i class="ti ti-check"></i> Social interaction</li>
-        </ul>
+    <div class="nu-class-grid">
+
+      <div class="nu-class-card">
+        <div class="nucc-top">
+          <span class="nucc-age">3 &ndash; 4 Years</span>
+          <span class="nucc-num">01</span>
+        </div>
+        <h3>Early Explorers</h3>
+        <span class="nucc-sub">Baby Class</span>
+        <p>A joyful beginning where little learners explore, play, and build essential language, social, and motor skills in a caring and stimulating environment.</p>
       </div>
 
-      <div class="class-card cc-green">
-        <div class="class-age">3 – 4 Yrs</div>
-        <h3>Middle Class</h3>
-        <p>Building on foundational skills with more structured activities, early literacy and numeracy concepts.</p>
-        <ul>
-          <li><i class="ti ti-check"></i> Phonics and letter recognition</li>
-          <li><i class="ti ti-check"></i> Number concepts 1–20</li>
-          <li><i class="ti ti-check"></i> Arts and craft projects</li>
-          <li><i class="ti ti-check"></i> Outdoor exploration</li>
-        </ul>
+      <div class="nu-class-card nu-class-gold">
+        <div class="nucc-top">
+          <span class="nucc-age">4 &ndash; 5 Years</span>
+          <span class="nucc-num">02</span>
+        </div>
+        <h3>Mid Explorers</h3>
+        <span class="nucc-sub">Middle Class</span>
+        <p>Children grow in confidence as they develop early literacy, numeracy, creativity, and problem-solving skills through engaging, hands-on learning experiences.</p>
       </div>
 
-      <div class="class-card cc-red">
-        <div class="class-age">4 – 5 Yrs</div>
-        <h3>Top Class</h3>
-        <p>Preparing children for Primary One through focused reading, writing, maths and critical thinking activities.</p>
-        <ul>
-          <li><i class="ti ti-check"></i> Reading and writing readiness</li>
-          <li><i class="ti ti-check"></i> Number work up to 100</li>
-          <li><i class="ti ti-check"></i> Science exploration</li>
-          <li><i class="ti ti-check"></i> Primary One transition prep</li>
-        </ul>
+      <div class="nu-class-card">
+        <div class="nucc-top">
+          <span class="nucc-age">5 &ndash; 6 Years</span>
+          <span class="nucc-num">03</span>
+        </div>
+        <h3>Future Explorers</h3>
+        <span class="nucc-sub">Top Class</span>
+        <p>Preparing children for primary school by strengthening academic foundations, critical thinking, communication, leadership, and independence through a well-rounded curriculum.</p>
       </div>
 
     </div>
   </section>
 
-  <!-- GALLERY STRIP -->
-  <section class="gallery-strip">
-    <div class="section-header">
-      <h2>Life in Our Nursery</h2>
-      <p>A glimpse into the daily joy of our little learners</p>
+  <!-- ══════════════════════════════════════
+       HOLISTIC LEARNING PROGRAMME
+  ══════════════════════════════════════ -->
+  <section class="nu-programme">
+    <div class="ab-sec-head ab-sec-head-light">
+      <span class="ab-script">Our class learning adventures</span>
+      <h2>HOLISTIC LEARNING PROGRAMME</h2>
+      <span class="ab-rule ab-rule-center"></span>
     </div>
-    <div class="gs-strip-grid">
-      <div class="gs-strip-item">
-        <img src="images/n7.JPG" alt="Nursery activity"/>
+
+    <div class="nu-prog-intro">
+      <p>Our Nursery Skill Development Programme builds strong foundations in literacy, numeracy, communication, creativity, technology, physical development, and character through engaging, play-based learning that prepares every child for lifelong success. Our holistic learning programme equips children with the essential skills, knowledge, and values needed for a successful transition to primary school.</p>
+    </div>
+
+    <div class="nu-prog-grid">
+      <div class="nu-prog-item"><i class="ti ti-message-language"></i><span>Language Development (English)</span></div>
+      <div class="nu-prog-item"><i class="ti ti-abc"></i><span>Pre-Reading Skills (Phonics)</span></div>
+      <div class="nu-prog-item"><i class="ti ti-pencil"></i><span>Pre-Writing Skills</span></div>
+      <div class="nu-prog-item"><i class="ti ti-math-symbols"></i><span>Mathematics Readiness (Numeracy)</span></div>
+      <div class="nu-prog-item"><i class="ti ti-plant-2"></i><span>Environmental Awareness</span></div>
+      <div class="nu-prog-item"><i class="ti ti-palette"></i><span>Creative Arts</span></div>
+      <div class="nu-prog-item"><i class="ti ti-music"></i><span>Music, Dance &amp; Drama (MDD)</span></div>
+      <div class="nu-prog-item"><i class="ti ti-run"></i><span>Physical Education (PE)</span></div>
+      <div class="nu-prog-item"><i class="ti ti-device-laptop"></i><span>ICT &amp; Digital Learning</span></div>
+      <div class="nu-prog-item"><i class="ti ti-mood-smile"></i><span>Social and Emotional Learning</span></div>
+      <div class="nu-prog-item"><i class="ti ti-hand-love-you"></i><span>Religious Education</span></div>
+      <div class="nu-prog-item"><i class="ti ti-bulb"></i><span>Life Skills</span></div>
+      <div class="nu-prog-item"><i class="ti ti-shield-check"></i><span>Health, Hygiene &amp; Safety</span></div>
+      <div class="nu-prog-item"><i class="ti ti-book-2"></i><span>Storytelling &amp; Literacy</span></div>
+      <div class="nu-prog-item"><i class="ti ti-messages"></i><span>Communication Skills</span></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       LEARNING BEYOND THE CLASSROOM
+  ══════════════════════════════════════ -->
+  <section class="nu-beyond">
+    <div class="nu-beyond-head">
+      <div class="nu-beyond-left">
+        <span class="ab-script">Learning beyond the classroom</span>
+        <h2>OUTDOOR ADVENTURES</h2>
+        <span class="ab-rule"></span>
+        <p>Children explore, play, discover, and grow through exciting outdoor experiences that build confidence, creativity, teamwork, and a lifelong love for learning.</p>
       </div>
-      <div class="gs-strip-item">
-        <img src="images/n10.JPG" alt="Nursery activity"/>
+      <div class="nu-beyond-figure">
+        <img src="images/nurse.JPG" alt="Outdoor adventures at Brentwood Nursery"/>
       </div>
-      <div class="gs-strip-item">
-        <img src="images/nursery/_DSC0074.JPG" alt="Nursery activity"/>
-      </div>
-      <div class="gs-strip-item">
-        <img src="images/n1.JPG" alt="Nursery activity"/>
+    </div>
+
+    <div class="nu-act-wrap">
+      <h3 class="nu-act-title"><i class="ti ti-sparkles"></i> Our Activities</h3>
+      <div class="nu-act-grid">
+        <span class="nu-act">Circle Time</span>
+        <span class="nu-act">Morning Assembly</span>
+        <span class="nu-act">Phonics Sessions</span>
+        <span class="nu-act">Storytelling</span>
+        <span class="nu-act">Singing and Rhymes</span>
+        <span class="nu-act">Show and Tell</span>
+        <span class="nu-act">Art and Craft</span>
+        <span class="nu-act">Painting and Colouring</span>
+        <span class="nu-act">Drawing</span>
+        <span class="nu-act">Water Play</span>
+        <span class="nu-act">Building Blocks</span>
+        <span class="nu-act">Puzzle Solving</span>
+        <span class="nu-act">Role Play</span>
+        <span class="nu-act">Gardening</span>
+        <span class="nu-act">Indoor Games</span>
+        <span class="nu-act">Outdoor Play</span>
+        <span class="nu-act">Dance Sessions</span>
+        <span class="nu-act">Drama Performances</span>
+        <span class="nu-act">Reading Time</span>
+        <span class="nu-act">Number Games</span>
+        <span class="nu-act">Cooking Without Fire</span>
+        <span class="nu-act">Birthday Celebrations</span>
+        <span class="nu-act">Educational Trips</span>
+        <span class="nu-act">Cultural Day</span>
+        <span class="nu-act">Sports Day</span>
+        <span class="nu-act">Talent Day</span>
+        <span class="nu-act">Career Day</span>
+        <span class="nu-act">Parents' Day</span>
+        <span class="nu-act">Class Presentations</span>
+        <span class="nu-act">Fruits Day</span>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="cta-section">
-    <div class="cta-inner">
-      <h2>Ready to Enrol Your Child?</h2>
-      <p>Give your child the best start in life at Brent Wood School Nursery</p>
-      <div class="cta-btns">
-        <a href="admissions.html" class="btn-primary-hero">
-          Apply Now <i class="ti ti-arrow-right"></i>
+  <!-- ══════════════════════════════════════
+       LIFE IN OUR NURSERY
+  ══════════════════════════════════════ -->
+  <section class="nu-gallery">
+    <div class="ab-sec-head">
+      <span class="ab-script">A glimpse into our days</span>
+      <h2>LIFE IN OUR NURSERY</h2>
+      <span class="ab-rule ab-rule-center"></span>
+    </div>
+
+    <div class="nu-gal-grid">
+      <div class="nu-gal-item"><img src="images/n7.JPG" alt="Nursery activity"/></div>
+      <div class="nu-gal-item"><img src="images/n10.JPG" alt="Nursery activity"/></div>
+      <div class="nu-gal-item"><img src="images/n1.JPG" alt="Nursery activity"/></div>
+      <div class="nu-gal-item"><img src="images/n12.JPG" alt="Nursery activity"/></div>
+    </div>
+
+    <div class="nu-gal-btn">
+      <a href="gallery.html" class="wc-btn">
+        VIEW FULL GALLERY
+        <span class="wc-btn-circle"><i class="ti ti-arrow-right"></i></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       CTA
+  ══════════════════════════════════════ -->
+  <section class="ab-cta">
+    <div class="ab-cta-inner">
+      <h2>Ready to enrol your child?</h2>
+      <p>Give your child the very best start at Brentwood School Nursery.</p>
+      <div class="ab-cta-btns">
+        <a href="admissions.html" class="wc-btn">
+          APPLY NOW
+          <span class="wc-btn-circle"><i class="ti ti-arrow-right"></i></span>
         </a>
-        <a href="contact.html" class="btn-outline-hero">
-          Contact Us
-        </a>
+        <a href="contact.html" class="ab-btn-ghost">TALK TO US</a>
       </div>
     </div>
   </section>
 
- <!-- ⑪ FOOTER -->
-  <footer class="footer">
-    <div class="footer-top">
-      <div class="footer-col">
-        <h4>About Us</h4>
-        <p class="footer-about">
-          Providing quality education and nurturing every child's potential in a safe,
-          inclusive and stimulating environment since our founding.
-        </p>
-    
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer class="bw-footer">
+    <div class="bwf-grid">
+
+      <div class="bwf-col bwf-app">
+        <div class="bwf-phones">
+          <div class="bwf-ph">
+            <img src="images/1x.png" alt=""/>
+            <div class="bwf-ph-grid">
+              <i class="ti ti-bell"></i><i class="ti ti-book"></i>
+              <i class="ti ti-calendar"></i><i class="ti ti-file"></i>
+              <i class="ti ti-checkbox"></i><i class="ti ti-chart-bar"></i>
+            </div>
+          </div>
+          <div class="bwf-ph">
+            <img src="images/1x.png" alt=""/>
+            <div class="bwf-ph-grid">
+              <i class="ti ti-clipboard"></i><i class="ti ti-message"></i>
+              <i class="ti ti-users"></i><i class="ti ti-star"></i>
+              <i class="ti ti-award"></i><i class="ti ti-settings"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="bwf-app-text">
+          <h4>SCHOOL APP</h4>
+          <p>Stay connected with your child's learning journey.</p>
+          <ul>
+            <li><i class="ti ti-circle-check"></i> Announcements</li>
+            <li><i class="ti ti-circle-check"></i> Homework &amp; Assignments</li>
+            <li><i class="ti ti-circle-check"></i> Events &amp; Calendar</li>
+            <li><i class="ti ti-circle-check"></i> Attendance</li>
+            <li><i class="ti ti-circle-check"></i> Reports &amp; Updates</li>
+          </ul>
+          <div class="bwf-store">
+            <a href="#"><i class="ti ti-brand-google-play"></i><span><small>GET IT ON</small>Google Play</span></a>
+            <a href="#"><i class="ti ti-brand-apple"></i><span><small>Download on the</small>App Store</span></a>
+          </div>
+        </div>
       </div>
-      <div class="footer-col">
-        <h4>Contact Us</h4>
-        <ul class="footer-contact">
+
+      <div class="bwf-col">
+        <h4>GET IN TOUCH</h4>
+        <ul class="bwf-contact">
           <li>
-            <i class="ti ti-map-pin"></i>
-            <span>Kisaasi, Ssebagala Road, Off Bukoto Kisaasi Road, Kampala, Uganda</span>
+            <span class="bwf-ic bwf-ic-navy"><i class="ti ti-phone"></i></span>
+            <span>+256 &ndash; 752998618 / +256 788120443</span>
           </li>
           <li>
-            <i class="ti ti-phone"></i>
-            <span>+256 788 120 443 / +256 755 361 559</span>
+            <span class="bwf-ic bwf-ic-green"><i class="ti ti-brand-whatsapp"></i></span>
+            <span>0788120443</span>
           </li>
           <li>
-            <i class="ti ti-mail"></i>
-            <span>brentwoodschoolug@gmail.com</span>
+            <span class="bwf-ic bwf-ic-navy"><i class="ti ti-mail"></i></span>
+            <span>brentwoodschug@gmail.com</span>
+          </li>
+          <li>
+            <span class="bwf-ic bwf-ic-navy"><i class="ti ti-map-pin"></i></span>
+            <span>Kisaasi, Ssebagala road.<br/>Uganda, Kampala.</span>
           </li>
         </ul>
       </div>
-   
+
+      <div class="bwf-col">
+        <h4>FIND US ON MAP</h4>
+        <div class="bwf-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7572!2d32.5899!3d0.3476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwMjAnNTEuNCJOIDMywrAzNSczNi40IkU!5e0!3m2!1sen!2sug!4v1234567890"
+            allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Brentwood School Location">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="bwf-col">
+        <h4>FOLLOW US</h4>
+        <div class="bwf-social">
+          <a href="https://www.facebook.com/share/1H5aonoJfw/" target="_blank">
+            <span class="bwf-sic" style="background:#1877f2"><i class="ti ti-brand-facebook"></i></span>Facebook
+          </a>
+          <a href="#" target="_blank">
+            <span class="bwf-sic bwf-ig"><i class="ti ti-brand-instagram"></i></span>Instagram
+          </a>
+          <a href="#" target="_blank">
+            <span class="bwf-sic" style="background:#000"><i class="ti ti-brand-x"></i></span>X (Twitter)
+          </a>
+          <a href="https://www.tiktok.com/@brentwood_school?is_from_webapp=1&sender_device=pc" target="_blank">
+            <span class="bwf-sic" style="background:#000"><i class="ti ti-brand-tiktok"></i></span>TikTok
+          </a>
+          <a href="https://wa.me/256788120443" target="_blank" class="bwf-wide">
+            <span class="bwf-sic" style="background:#25d366"><i class="ti ti-brand-whatsapp"></i></span>WhatsApp 0788120443
+          </a>
+        </div>
+      </div>
+
     </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 BrentWood School – Nursery &amp; Primary. All rights reserved.</p>
+
+    <div class="bwf-bottom">
+      <p>&copy; 2026 Brentwood School – Nursery &amp; Primary. All rights reserved.</p>
       <div class="footer-designed">
         <span>Designed &amp; Developed by</span>
         <div class="designer-info">
-         
           <div>
             <strong>Eng. Patrick</strong>
-            <a href="tel:+256702002442">
-              <i class="ti ti-phone"></i> 0702 002 442
-            </a>
+            <a href="tel:+256702002442"><i class="ti ti-phone"></i> 0702 002 442</a>
           </div>
         </div>
       </div>
     </div>
   </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/256788120443" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <i class="ti ti-brand-whatsapp"></i>
+  </a>
 
   <!-- Back to Top -->
   <button class="back-to-top" id="backToTop" aria-label="Back to top">

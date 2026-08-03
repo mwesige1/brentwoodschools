@@ -3,407 +3,414 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Primary Section – Brent Wood School</title>
+  <title>Primary Section – Brentwood School</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Nunito:wght@400;600;700&family=Kaushan+Script&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
 
   <!-- FLOATING SOCIAL SIDEBAR -->
-<div class="social-sidebar">
-<a href="https://www.facebook.com/share/1H5aonoJfw/" class="ss-item ss-facebook" target="_blank" aria-label="Facebook">    <i class="ti ti-brand-facebook"></i>
-  </a>
-  <a href="#" class="ss-item ss-twitter" aria-label="Twitter">
-    <i class="ti ti-brand-twitter"></i>
-  </a>
-  <a href="#" class="ss-item ss-instagram" aria-label="Instagram">
-    <i class="ti ti-brand-instagram"></i>
-  </a>
-  <a href="#" class="ss-item ss-youtube" aria-label="YouTube">
-    <i class="ti ti-brand-youtube"></i>
-  </a>
-<a href="https://www.tiktok.com/@brentwood_school?is_from_webapp=1&sender_device=pc" class="ss-item ss-tiktok" target="_blank" aria-label="TikTok">    <i class="ti ti-brand-tiktok"></i>
-  </a>
-  <a href="https://wa.me/256788120443" class="ss-item ss-whatsapp" target="_blank" aria-label="WhatsApp">
-    <i class="ti ti-brand-whatsapp"></i>
-  </a>
-</div>
+  <div class="social-sidebar">
+    <a href="https://www.facebook.com/share/1H5aonoJfw/" class="ss-item ss-facebook" target="_blank" aria-label="Facebook"><i class="ti ti-brand-facebook"></i></a>
+    <a href="#" class="ss-item ss-twitter" aria-label="Twitter"><i class="ti ti-brand-twitter"></i></a>
+    <a href="#" class="ss-item ss-instagram" aria-label="Instagram"><i class="ti ti-brand-instagram"></i></a>
+    <a href="#" class="ss-item ss-youtube" aria-label="YouTube"><i class="ti ti-brand-youtube"></i></a>
+    <a href="https://www.tiktok.com/@brentwood_school?is_from_webapp=1&sender_device=pc" class="ss-item ss-tiktok" target="_blank" aria-label="TikTok"><i class="ti ti-brand-tiktok"></i></a>
+    <a href="https://wa.me/256788120443" class="ss-item ss-whatsapp" target="_blank" aria-label="WhatsApp"><i class="ti ti-brand-whatsapp"></i></a>
+  </div>
 
+  <!-- MOBILE SOCIAL TOGGLE -->
+  <button class="social-sidebar-toggle" id="socialToggle" aria-label="Social media">
+    <i class="ti ti-share"></i>
+  </button>
 
-<!-- MOBILE SOCIAL TOGGLE -->
-<button class="social-sidebar-toggle" id="socialToggle" aria-label="Social media">
-  <i class="ti ti-share"></i>
-</button>
+  <!-- MOBILE SOCIAL POPUP -->
+  <div class="social-sidebar-mobile" id="mobileSocialSidebar">
+    <a href="https://www.facebook.com/share/1H5aonoJfw/" target="_blank" style="background:#1877f2" aria-label="Facebook"><i class="ti ti-brand-facebook"></i></a>
+    <a href="#" target="_blank" style="background:#1da1f2" aria-label="Twitter"><i class="ti ti-brand-twitter"></i></a>
+    <a href="#" target="_blank" style="background:#e1306c" aria-label="Instagram"><i class="ti ti-brand-instagram"></i></a>
+    <a href="#" target="_blank" style="background:#ff0000" aria-label="YouTube"><i class="ti ti-brand-youtube"></i></a>
+    <a href="https://www.tiktok.com/@brentwood_school?is_from_webapp=1&sender_device=pc" target="_blank" style="background:#010101" aria-label="TikTok"><i class="ti ti-brand-tiktok"></i></a>
+    <a href="https://wa.me/256788120443" target="_blank" style="background:#25d366" aria-label="WhatsApp"><i class="ti ti-brand-whatsapp"></i></a>
+  </div>
 
-<!-- MOBILE SOCIAL POPUP -->
-<div class="social-sidebar-mobile" id="mobileSocialSidebar">
-  <a href="https://www.facebook.com/share/1H5aonoJfw/" target="_blank" style="background:#1877f2" aria-label="Facebook"><i class="ti ti-brand-facebook"></i></a>
-  <a href="#" target="_blank" style="background:#1da1f2" aria-label="Twitter"><i class="ti ti-brand-twitter"></i></a>
-  <a href="#" target="_blank" style="background:#e1306c" aria-label="Instagram"><i class="ti ti-brand-instagram"></i></a>
-  <a href="#" target="_blank" style="background:#ff0000" aria-label="YouTube"><i class="ti ti-brand-youtube"></i></a>
-  <a href="https://www.tiktok.com/@brentwood_school?is_from_webapp=1&sender_device=pc" target="_blank" style="background:#010101" aria-label="TikTok"><i class="ti ti-brand-tiktok"></i></a>
-  <a href="https://wa.me/256788120443" target="_blank" style="background:#25d366" aria-label="WhatsApp"><i class="ti ti-brand-whatsapp"></i></a>
-</div>
+  <!-- ══════════════════════════════════════
+       TOPBAR
+  ══════════════════════════════════════ -->
+  <div class="bw-shell">
+    <div class="bw-topbar">
+      <a href="index.html" class="bw-logo">
+        <img src="images/1x.png" alt="Brentwood School"/>
+      </a>
+      <nav class="bw-nav" id="mainNav">
+        <ul class="nav-links">
+          <li><a href="index.html"><i class="ti ti-home"></i> HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="nursery.html">NURSERY SECTION</a></li>
+          <li><a href="primary.html" class="active">PRIMARY SECTION</a></li>
+          <li><a href="admissions.html">ADMISSION</a></li>
+          <li><a href="index.html#events">EVENTS</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a href="contact.html">CONTACTS</a></li>
+        </ul>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
 
-<!-- NAVBAR -->
-<nav class="navbar" id="mainNav">
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="nursery.html">Nursery</a></li>
-    <li><a href="primary.html" class="active">Primary</a></li>
-    <li><a href="index.html#events">Events</a></li>
-    <li><a href="gallery.html">Gallery</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-<a href="admissions.html" class="nav-admission-badge">
-  <span class="nav-badge-pulse"></span>
-  <div class="nav-badge-inner">
-    <i class="ti ti-school"></i>
-    <div>
-      <strong>Admissions</strong>
-      <span>Now Open!</span>
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="nursery.html">Nursery Section</a>
+      <a href="primary.html">Primary Section</a>
+      <a href="admissions.html">Admission</a>
+      <a href="index.html#events">Events</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contacts</a>
+      <a href="boarding.html">Boarding Section</a>
     </div>
   </div>
-</a>
-  <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
-    <span></span><span></span><span></span>
-  </button>
-</nav>
 
-<!-- MOBILE MENU -->
-<div class="mobile-menu" id="mobileMenu">
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="nursery.html">Nursery</a>
-  <a href="primary.html">Primary</a>
-  <a href="index.html#events">Events</a>
-  <a href="gallery.html">Gallery</a>
-  <a href="contact.html">Contact</a>
-  <a href="admissions.html" class="btn-admissions">
-    <span class="pulse-dot"></span> Admissions Open
-  </a>
-</div>
-
-  <!-- PAGE HERO -->
-  <section class="page-hero">
-    <div class="page-hero-overlay"></div>
-    <img src="images/prime.JPG" alt="Primary Section" class="page-hero-img"/>
-
-
-  <!-- LOGO — Sitting on hero video -->
-  <img src="images/1x.png" alt="Brent Wood School Logo" class="hero-logo"/>
-
-    <div class="page-hero-content">
-      <h1>Primary Section</h1>
-      <p>Preparing confident, capable and curious learners for the future</p>
-    
+  <!-- ══════════════════════════════════════
+       PAGE BANNER — with hero image
+  ══════════════════════════════════════ -->
+<section class="pg-banner pg-banner-img pg-banner-mid">
+      <img src="images/events/pal.JPG" alt="Primary Section" class="pg-banner-bg"/>
+    <div class="pg-banner-inner">
+      <span class="pg-script">Quality and Excellence</span>
+      <h1>PRIMARY SECTION</h1>
+      <span class="pg-rule"></span>
+      <div class="pg-crumb">
+        <a href="index.html">Home</a>
+        <i class="ti ti-chevron-right"></i>
+        <span>Primary Section</span>
+      </div>
     </div>
   </section>
 
-  <!-- INTRO -->
-  <section class="nursery-intro">
-    <div class="ni-grid">
-      <div class="ni-image">
-        <img src="images/scince.JPG" alt="Primary students learning"/>
-        <div class="ni-floating-card">
-          <i class="ti ti-school"></i>
-          <div>
-            <strong>Excellence in Learning</strong>
-            <span>Primary One – Seven</span>
+  <!-- ══════════════════════════════════════
+       INTRO
+  ══════════════════════════════════════ -->
+  <section class="ab-intro">
+    <div class="ab-card">
+
+      <div class="ab-tags">
+        <span class="ab-tag"><i class="ti ti-certificate"></i> Competency-Based Curriculum</span>
+        <span class="ab-tag"><i class="ti ti-device-laptop"></i> Digital Discovery</span>
+        <span class="ab-tag"><i class="ti ti-home-2"></i> Day &amp; Boarding</span>
+      </div>
+
+      <span class="ab-script">Building strong foundations for lifelong success</span>
+      <h2>OUR PRIMARY SECTION</h2>
+      <span class="ab-rule"></span>
+
+      <div class="nu-split">
+        <div class="ab-body">
+          <p>At Brentwood School, we believe that every child possesses unique gifts and limitless potential. Guided by our motto, "Quality and Excellence," our Primary Section provides an exceptional learning environment where academic achievement, character formation, and holistic development come together to prepare learners for a successful future.</p>
+
+          <p>Rooted in Uganda's Competency-Based Curriculum (National Curriculum), our programme is designed to develop knowledgeable, skilled, and confident learners who are equipped to thrive in a rapidly changing world. We cultivate curiosity, creativity, critical thinking, collaboration, communication, and digital competence, empowering children to become independent learners and innovative problem-solvers.</p>
+
+          <p>Our dedicated and highly qualified educators provide personalised learning experiences that challenge, inspire, and support every learner. Alongside academic excellence, we intentionally nurture faith, discipline, integrity, respect, responsibility, and compassion, helping children develop into principled individuals who make meaningful contributions to their communities.</p>
+        </div>
+
+        <div class="nu-figure">
+          <img src="images/p3.JPG" alt="Primary learners at Brentwood School"/>
+          <div class="nu-figure-card">
+            <i class="ti ti-award-filled"></i>
+            <div>
+              <strong>Confident Achievers</strong>
+              <span>Primary One &ndash; Seven</span>
+            </div>
           </div>
         </div>
       </div>
-      <div class="ni-content">
-        <span class="ss-label">Our Primary</span>
-        <h2>Preparing Pupils for the Future</h2>
-        <p>
-          Our Primary section at Brent Wood School provides a structured, supportive
-          and academically rigorous environment for pupils from Primary One to Primary
-          Seven. We are committed to helping every child reach their full potential.
-        </p>
-        <p>
-          From foundational skills to critical thinking, our experienced teachers
-          steadily prepare pupils for national examinations and future learning through
-          a well-balanced curriculum that covers academics, sports, arts and ICT.
-        </p>
-        <a href="admissions.html" class="btn-section">
-          Enrol Your Child <i class="ti ti-arrow-right"></i>
+
+      <div class="ab-quote">
+        <i class="ti ti-quote"></i>
+        <p>At Brentwood School, we are committed to raising confident achievers, compassionate leaders, and lifelong learners — empowering every child to excel today and lead with purpose tomorrow.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       CORE COMPETENCIES
+  ══════════════════════════════════════ -->
+  <section class="pr-comp">
+    <div class="ab-sec-head">
+      <span class="ab-script">What we cultivate</span>
+      <h2>SKILLS FOR A CHANGING WORLD</h2>
+      <span class="ab-rule ab-rule-center"></span>
+    </div>
+
+    <div class="pr-comp-grid">
+      <div class="pr-comp-item"><i class="ti ti-search"></i><span>Curiosity</span></div>
+      <div class="pr-comp-item"><i class="ti ti-bulb"></i><span>Creativity</span></div>
+      <div class="pr-comp-item"><i class="ti ti-brain"></i><span>Critical Thinking</span></div>
+      <div class="pr-comp-item"><i class="ti ti-users-group"></i><span>Collaboration</span></div>
+      <div class="pr-comp-item"><i class="ti ti-messages"></i><span>Communication</span></div>
+      <div class="pr-comp-item"><i class="ti ti-device-laptop"></i><span>Digital Competence</span></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       SUBJECTS
+  ══════════════════════════════════════ -->
+  <section class="pr-subjects">
+    <div class="ab-sec-head ab-sec-head-light">
+      <span class="ab-script">A rich and balanced curriculum</span>
+      <h2>SUBJECTS WE OFFER</h2>
+      <span class="ab-rule ab-rule-center"></span>
+    </div>
+
+    <div class="pr-sub-intro">
+      <p>Every subject is thoughtfully delivered to strengthen foundational literacy and numeracy while encouraging inquiry, innovation, and the practical application of knowledge.</p>
+    </div>
+
+    <div class="pr-sub-grid">
+      <div class="pr-sub-card"><span class="prs-ic"><i class="ti ti-book-2"></i></span><h4>English</h4></div>
+      <div class="pr-sub-card"><span class="prs-ic"><i class="ti ti-math-symbols"></i></span><h4>Mathematics</h4></div>
+      <div class="pr-sub-card"><span class="prs-ic"><i class="ti ti-flask"></i></span><h4>Science</h4></div>
+      <div class="pr-sub-card"><span class="prs-ic"><i class="ti ti-world"></i></span><h4>Social Studies</h4></div>
+      <div class="pr-sub-card"><span class="prs-ic"><i class="ti ti-device-desktop"></i></span><h4>Information Technology</h4></div>
+      <div class="pr-sub-card"><span class="prs-ic"><i class="ti ti-book"></i></span><h4>Reading</h4></div>
+      <div class="pr-sub-card"><span class="prs-ic"><i class="ti ti-heart-handshake"></i></span><h4>Religious Education</h4></div>
+      <div class="pr-sub-card"><span class="prs-ic"><i class="ti ti-message-language"></i></span><h4>Local &amp; International Language</h4></div>
+      <div class="pr-sub-card"><span class="prs-ic"><i class="ti ti-palette"></i></span><h4>Creative Arts</h4></div>
+      <div class="pr-sub-card"><span class="prs-ic"><i class="ti ti-pencil"></i></span><h4>Handwriting</h4></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       BEYOND THE CLASSROOM
+  ══════════════════════════════════════ -->
+  <section class="nu-beyond">
+    <div class="nu-beyond-head">
+      <div class="nu-beyond-left">
+        <span class="ab-script">Education beyond the classroom</span>
+        <h2>CO-CURRICULAR LIFE</h2>
+        <span class="ab-rule"></span>
+        <p>Our dynamic co-curricular programme provides opportunities for learners to discover and develop their talents. These experiences build confidence, leadership, resilience, teamwork, and sportsmanship while promoting physical, social, and emotional well-being.</p>
+      </div>
+      <div class="nu-beyond-figure">
+        <img src="images/p11.JPG" alt="Co-curricular activities at Brentwood School"/>
+      </div>
+    </div>
+
+    <div class="nu-act-wrap">
+      <h3 class="nu-act-title"><i class="ti ti-trophy"></i> Activities &amp; Sports</h3>
+      <div class="pr-act-grid">
+        <div class="pr-act"><i class="ti ti-ball-football"></i><span>Football</span></div>
+        <div class="pr-act"><i class="ti ti-ball-basketball"></i><span>Netball</span></div>
+        <div class="pr-act"><i class="ti ti-swimming"></i><span>Swimming</span></div>
+        <div class="pr-act"><i class="ti ti-chess"></i><span>Chess</span></div>
+        <div class="pr-act"><i class="ti ti-music"></i><span>Music</span></div>
+        <div class="pr-act"><i class="ti ti-masks-theater"></i><span>Drama</span></div>
+        <div class="pr-act"><i class="ti ti-help-circle"></i><span>Quizzes</span></div>
+        <div class="pr-act"><i class="ti ti-run"></i><span>Athletics</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       DIGITAL DISCOVERY BAND
+  ══════════════════════════════════════ -->
+  <section class="pr-digital">
+    <div class="pr-digital-inner">
+      <span class="pr-dig-icon"><i class="ti ti-device-laptop"></i></span>
+      <div class="pr-dig-text">
+        <span class="pr-dig-label">DIGITAL DISCOVERY</span>
+        <h2>Ready for the twenty-first century</h2>
+        <p>Through our commitment to Digital Discovery, learners are introduced to technology in meaningful ways that enhance creativity, research, collaboration, and responsible digital citizenship — preparing them for the opportunities and challenges of the twenty-first century.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       CLASSES P1 – P7
+  ══════════════════════════════════════ -->
+  <section class="pr-classes">
+    <div class="ab-sec-head">
+      <span class="ab-script">Seven years of growth</span>
+      <h2>PRIMARY ONE TO PRIMARY SEVEN</h2>
+      <span class="ab-rule ab-rule-center"></span>
+    </div>
+
+    <div class="pr-class-grid">
+      <div class="pr-class"><span class="prc-num">P1</span><span class="prc-label">Primary One</span></div>
+      <div class="pr-class"><span class="prc-num">P2</span><span class="prc-label">Primary Two</span></div>
+      <div class="pr-class"><span class="prc-num">P3</span><span class="prc-label">Primary Three</span></div>
+      <div class="pr-class"><span class="prc-num">P4</span><span class="prc-label">Primary Four</span></div>
+      <div class="pr-class"><span class="prc-num">P5</span><span class="prc-label">Primary Five</span></div>
+      <div class="pr-class"><span class="prc-num">P6</span><span class="prc-label">Primary Six</span></div>
+      <div class="pr-class pr-class-final"><span class="prc-num">P7</span><span class="prc-label">Primary Seven</span></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       LIFE IN OUR PRIMARY
+  ══════════════════════════════════════ -->
+  <section class="nu-gallery">
+    <div class="ab-sec-head">
+      <span class="ab-script">A glimpse into our days</span>
+      <h2>LIFE IN OUR PRIMARY</h2>
+      <span class="ab-rule ab-rule-center"></span>
+    </div>
+
+    <div class="nu-gal-grid">
+      <div class="nu-gal-item"><img src="images/p1.JPG" alt="Primary activity"/></div>
+      <div class="nu-gal-item"><img src="images/p2.JPG" alt="Primary activity"/></div>
+      <div class="nu-gal-item"><img src="images/p3.JPG" alt="Primary activity"/></div>
+      <div class="nu-gal-item"><img src="images/p11.JPG" alt="Primary activity"/></div>
+    </div>
+
+    <div class="nu-gal-btn">
+      <a href="gallery.html" class="wc-btn">
+        VIEW FULL GALLERY
+        <span class="wc-btn-circle"><i class="ti ti-arrow-right"></i></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       CTA
+  ══════════════════════════════════════ -->
+  <section class="ab-cta">
+    <div class="ab-cta-inner">
+      <h2>Join our Primary Section</h2>
+      <p>Brentwood School — Quality and Excellence.</p>
+      <div class="ab-cta-btns">
+        <a href="admissions.html" class="wc-btn">
+          APPLY NOW
+          <span class="wc-btn-circle"><i class="ti ti-arrow-right"></i></span>
         </a>
+        <a href="contact.html" class="ab-btn-ghost">TALK TO US</a>
       </div>
     </div>
   </section>
 
-  <!-- SUBJECTS OFFERED -->
-  <section class="offer-section">
-    <div class="section-header">
-      <h2>Subjects We Offer</h2>
-      <p>A comprehensive curriculum covering all key areas of learning</p>
-    </div>
-    <div class="offer-grid">
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer class="bw-footer">
+    <div class="bwf-grid">
 
-      <div class="offer-card">
-        <div class="offer-icon oi-blue">
-          <i class="ti ti-math"></i>
+      <div class="bwf-col bwf-app">
+        <div class="bwf-phones">
+          <div class="bwf-ph">
+            <img src="images/1x.png" alt=""/>
+            <div class="bwf-ph-grid">
+              <i class="ti ti-bell"></i><i class="ti ti-book"></i>
+              <i class="ti ti-calendar"></i><i class="ti ti-file"></i>
+              <i class="ti ti-checkbox"></i><i class="ti ti-chart-bar"></i>
+            </div>
+          </div>
+          <div class="bwf-ph">
+            <img src="images/1x.png" alt=""/>
+            <div class="bwf-ph-grid">
+              <i class="ti ti-clipboard"></i><i class="ti ti-message"></i>
+              <i class="ti ti-users"></i><i class="ti ti-star"></i>
+              <i class="ti ti-award"></i><i class="ti ti-settings"></i>
+            </div>
+          </div>
         </div>
-        <h4>Mathematics</h4>
-        <p>Building strong numerical foundations through problem solving, mental maths and applied mathematics.</p>
-      </div>
 
-      <div class="offer-card">
-        <div class="offer-icon oi-green">
-          <i class="ti ti-book"></i>
-        </div>
-        <h4>English Language</h4>
-        <p>Developing reading, writing, comprehension and communication skills for confident expression.</p>
-      </div>
-
-      <div class="offer-card">
-        <div class="offer-icon oi-red">
-          <i class="ti ti-microscope"></i>
-        </div>
-        <h4>Science</h4>
-        <p>Exploring the natural world through experiments, observations and inquiry-based learning activities.</p>
-      </div>
-
-      <div class="offer-card">
-        <div class="offer-icon oi-yellow">
-          <i class="ti ti-world"></i>
-        </div>
-        <h4>Social Studies</h4>
-        <p>Understanding Uganda, Africa and the world — history, geography, civics and cultural studies.</p>
-      </div>
-
-      <div class="offer-card">
-        <div class="offer-icon oi-blue">
-          <i class="ti ti-device-desktop"></i>
-        </div>
-        <h4>ICT &amp; Computing</h4>
-        <p>Hands-on computer literacy, typing, internet safety and basic programming concepts for digital readiness.</p>
-      </div>
-
-      <div class="offer-card">
-        <div class="offer-icon oi-green">
-          <i class="ti ti-message-language"></i>
-        </div>
-        <h4>Local Languages</h4>
-        <p>Luganda and other local languages taught to promote cultural identity and mother tongue literacy.</p>
-      </div>
-
-      <div class="offer-card">
-        <div class="offer-icon oi-red">
-          <i class="ti ti-palette"></i>
-        </div>
-        <h4>Creative Arts</h4>
-        <p>Music, art, drama and crafts nurture creativity, self-expression and cultural appreciation.</p>
-      </div>
-
-      <div class="offer-card">
-        <div class="offer-icon oi-yellow">
-          <i class="ti ti-ball-football"></i>
-        </div>
-        <h4>Physical Education</h4>
-        <p>Team sports, athletics and physical fitness activities promoting health, teamwork and discipline.</p>
-      </div>
-
-      <div class="offer-card">
-        <div class="offer-icon oi-blue">
-          <i class="ti ti-pray"></i>
-        </div>
-        <h4>Religious Education</h4>
-        <p>Christian and Islamic Religious Education developing moral values, character and spiritual growth.</p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- PRIMARY CLASSES -->
-  <section class="classes-section">
-    <div class="section-header">
-      <h2>Primary Classes</h2>
-      <p>Seven years of structured and progressive academic development</p>
-    </div>
-    <div class="primary-classes-grid">
-
-      <div class="primary-class-card">
-        <div class="pc-number">P1</div>
-        <div class="pc-info">
-          <h4>Primary One</h4>
-          <p>Transition from nursery with focus on reading, writing and number work in a nurturing environment.</p>
+        <div class="bwf-app-text">
+          <h4>SCHOOL APP</h4>
+          <p>Stay connected with your child's learning journey.</p>
+          <ul>
+            <li><i class="ti ti-circle-check"></i> Announcements</li>
+            <li><i class="ti ti-circle-check"></i> Homework &amp; Assignments</li>
+            <li><i class="ti ti-circle-check"></i> Events &amp; Calendar</li>
+            <li><i class="ti ti-circle-check"></i> Attendance</li>
+            <li><i class="ti ti-circle-check"></i> Reports &amp; Updates</li>
+          </ul>
+          <div class="bwf-store">
+            <a href="#"><i class="ti ti-brand-google-play"></i><span><small>GET IT ON</small>Google Play</span></a>
+            <a href="#"><i class="ti ti-brand-apple"></i><span><small>Download on the</small>App Store</span></a>
+          </div>
         </div>
       </div>
 
-      <div class="primary-class-card">
-        <div class="pc-number">P2</div>
-        <div class="pc-info">
-          <h4>Primary Two</h4>
-          <p>Building on P1 foundations with more structured literacy, numeracy and science activities.</p>
-        </div>
-      </div>
-
-      <div class="primary-class-card">
-        <div class="pc-number">P3</div>
-        <div class="pc-info">
-          <h4>Primary Three</h4>
-          <p>Expanding subject range with introduction to Social Studies, Local Languages and Creative Arts.</p>
-        </div>
-      </div>
-
-      <div class="primary-class-card">
-        <div class="pc-number">P4</div>
-        <div class="pc-info">
-          <h4>Primary Four</h4>
-          <p>Mid-primary consolidation with more complex concepts across all core subjects and ICT.</p>
-        </div>
-      </div>
-
-      <div class="primary-class-card">
-        <div class="pc-number">P5</div>
-        <div class="pc-info">
-          <h4>Primary Five</h4>
-          <p>Deepening academic rigour with increased focus on critical thinking and problem solving skills.</p>
-        </div>
-      </div>
-
-      <div class="primary-class-card">
-        <div class="pc-number">P6</div>
-        <div class="pc-info">
-          <h4>Primary Six</h4>
-          <p>Intensive preparation begins with mock assessments, revision and exam technique development.</p>
-        </div>
-      </div>
-
-      <div class="primary-class-card pc-highlight">
-        <div class="pc-number">P7</div>
-        <div class="pc-info">
-          <h4>Primary Seven</h4>
-          <p>Final year with full focus on PLE preparation, past papers, mock exams and individual coaching.</p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ACHIEVEMENTS -->
-  <section class="achievements-section">
-    <div class="section-header light">
-      <h2>Our Achievements</h2>
-      <p>Results that speak for themselves</p>
-    </div>
-    <div class="achievements-grid">
-
-      <div class="achievement-card">
-        <i class="ti ti-trophy"></i>
-        <strong>Top PLE Results</strong>
-        <p>Consistently producing Division One pupils in the national Primary Leaving Examinations.</p>
-      </div>
-
-      <div class="achievement-card">
-        <i class="ti ti-medal"></i>
-        <strong>Sports Champions</strong>
-        <p>Regional champions in football, netball and athletics at inter-school competitions.</p>
-      </div>
-
-      <div class="achievement-card">
-        <i class="ti ti-certificate"></i>
-        <strong>Academic Awards</strong>
-        <p>Multiple district and national academic competition winners across science and literacy.</p>
-      </div>
-
-      <div class="achievement-card">
-        <i class="ti ti-star"></i>
-        <strong>100% Transition Rate</strong>
-        <p>Every P7 graduate successfully transitions to a secondary school of their choice.</p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- GALLERY STRIP -->
-  <section class="gallery-strip">
-    <div class="section-header">
-      <h2>Life in Our Primary</h2>
-      <p>A glimpse into the daily learning journey of our pupils</p>
-    </div>
-    <div class="gs-strip-grid">
-      <div class="gs-strip-item">
-        <img src="images/p9.JPG" alt="Primary activity"/>
-      </div>
-      <div class="gs-strip-item">
-        <img src="images/scince.JPG" alt="Primary activity"/>
-      </div>
-      <div class="gs-strip-item">
-        <img src="images/p20.JPG" alt="Primary activity"/>
-      </div>
-      <div class="gs-strip-item">
-        <img src="images/p21.jpg" alt="Primary activity"/>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="cta-section">
-    <div class="cta-inner">
-      <h2>Ready to Join Our Primary?</h2>
-      <p>Give your child a world-class primary education at Brent Wood School</p>
-      <div class="cta-btns">
-        <a href="admissions.html" class="btn-primary-hero">
-          Apply Now <i class="ti ti-arrow-right"></i>
-        </a>
-        <a href="contact.html" class="btn-outline-hero">
-          Contact Us
-        </a>
-      </div>
-    </div>
-  </section>
-
- <!-- ⑪ FOOTER -->
-  <footer class="footer">
-    <div class="footer-top">
-      <div class="footer-col">
-        <h4>About Us</h4>
-        <p class="footer-about">
-          Providing quality education and nurturing every child's potential in a safe,
-          inclusive and stimulating environment since our founding.
-        </p>
-    
-      </div>
-      <div class="footer-col">
-        <h4>Contact Us</h4>
-        <ul class="footer-contact">
+      <div class="bwf-col">
+        <h4>GET IN TOUCH</h4>
+        <ul class="bwf-contact">
           <li>
-            <i class="ti ti-map-pin"></i>
-            <span>Kisaasi, Ssebagala Road, Off Bukoto Kisaasi Road, Kampala, Uganda</span>
+            <span class="bwf-ic bwf-ic-navy"><i class="ti ti-phone"></i></span>
+            <span>+256 &ndash; 752998618 / +256 788120443</span>
           </li>
           <li>
-            <i class="ti ti-phone"></i>
-            <span>+256 788 120 443 / +256 755 361 559</span>
+            <span class="bwf-ic bwf-ic-green"><i class="ti ti-brand-whatsapp"></i></span>
+            <span>0788120443</span>
           </li>
           <li>
-            <i class="ti ti-mail"></i>
-            <span>brentwoodschoolug@gmail.com</span>
+            <span class="bwf-ic bwf-ic-navy"><i class="ti ti-mail"></i></span>
+            <span>brentwoodschug@gmail.com</span>
+          </li>
+          <li>
+            <span class="bwf-ic bwf-ic-navy"><i class="ti ti-map-pin"></i></span>
+            <span>Kisaasi, Ssebagala road.<br/>Uganda, Kampala.</span>
           </li>
         </ul>
       </div>
-   
+
+      <div class="bwf-col">
+        <h4>FIND US ON MAP</h4>
+        <div class="bwf-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7572!2d32.5899!3d0.3476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwMjAnNTEuNCJOIDMywrAzNSczNi40IkU!5e0!3m2!1sen!2sug!4v1234567890"
+            allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Brentwood School Location">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="bwf-col">
+        <h4>FOLLOW US</h4>
+        <div class="bwf-social">
+          <a href="https://www.facebook.com/share/1H5aonoJfw/" target="_blank">
+            <span class="bwf-sic" style="background:#1877f2"><i class="ti ti-brand-facebook"></i></span>Facebook
+          </a>
+          <a href="#" target="_blank">
+            <span class="bwf-sic bwf-ig"><i class="ti ti-brand-instagram"></i></span>Instagram
+          </a>
+          <a href="#" target="_blank">
+            <span class="bwf-sic" style="background:#000"><i class="ti ti-brand-x"></i></span>X (Twitter)
+          </a>
+          <a href="https://www.tiktok.com/@brentwood_school?is_from_webapp=1&sender_device=pc" target="_blank">
+            <span class="bwf-sic" style="background:#000"><i class="ti ti-brand-tiktok"></i></span>TikTok
+          </a>
+          <a href="https://wa.me/256788120443" target="_blank" class="bwf-wide">
+            <span class="bwf-sic" style="background:#25d366"><i class="ti ti-brand-whatsapp"></i></span>WhatsApp 0788120443
+          </a>
+        </div>
+      </div>
+
     </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 BrentWood School – Nursery &amp; Primary. All rights reserved.</p>
+
+    <div class="bwf-bottom">
+      <p>&copy; 2026 Brentwood School – Nursery &amp; Primary. All rights reserved.</p>
       <div class="footer-designed">
         <span>Designed &amp; Developed by</span>
         <div class="designer-info">
-         
           <div>
             <strong>Eng. Patrick</strong>
-            <a href="tel:+256702002442">
-              <i class="ti ti-phone"></i> 0702 002 442
-            </a>
+            <a href="tel:+256702002442"><i class="ti ti-phone"></i> 0702 002 442</a>
           </div>
         </div>
       </div>
     </div>
   </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/256788120443" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <i class="ti ti-brand-whatsapp"></i>
+  </a>
+
   <!-- Back to Top -->
   <button class="back-to-top" id="backToTop" aria-label="Back to top">
     <i class="ti ti-arrow-up"></i>

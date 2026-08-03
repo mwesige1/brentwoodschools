@@ -3,323 +3,413 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About Us – Brent Wood School</title>
+  <title>About Us – Brentwood School</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Nunito:wght@400;600;700&family=Kaushan+Script&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
 
   <!-- FLOATING SOCIAL SIDEBAR -->
-<div class="social-sidebar">
-<a href="https://www.facebook.com/share/1H5aonoJfw/" class="ss-item ss-facebook" target="_blank" aria-label="Facebook">    <i class="ti ti-brand-facebook"></i>
-  </a>
-  <a href="#" class="ss-item ss-twitter" aria-label="Twitter">
-    <i class="ti ti-brand-twitter"></i>
-  </a>
-  <a href="#" class="ss-item ss-instagram" aria-label="Instagram">
-    <i class="ti ti-brand-instagram"></i>
-  </a>
-  <a href="#" class="ss-item ss-youtube" aria-label="YouTube">
-    <i class="ti ti-brand-youtube"></i>
-  </a>
-<a href="https://www.tiktok.com/@brentwood_school?is_from_webapp=1&sender_device=pc" class="ss-item ss-tiktok" target="_blank" aria-label="TikTok">    <i class="ti ti-brand-tiktok"></i>
-  </a>
-  <a href="https://wa.me/256788120443" class="ss-item ss-whatsapp" target="_blank" aria-label="WhatsApp">
-    <i class="ti ti-brand-whatsapp"></i>
-  </a>
-</div>
+  <div class="social-sidebar">
+    <a href="https://www.facebook.com/share/1H5aonoJfw/" class="ss-item ss-facebook" target="_blank" aria-label="Facebook"><i class="ti ti-brand-facebook"></i></a>
+    <a href="#" class="ss-item ss-twitter" aria-label="Twitter"><i class="ti ti-brand-twitter"></i></a>
+    <a href="#" class="ss-item ss-instagram" aria-label="Instagram"><i class="ti ti-brand-instagram"></i></a>
+    <a href="#" class="ss-item ss-youtube" aria-label="YouTube"><i class="ti ti-brand-youtube"></i></a>
+    <a href="https://www.tiktok.com/@brentwood_school?is_from_webapp=1&sender_device=pc" class="ss-item ss-tiktok" target="_blank" aria-label="TikTok"><i class="ti ti-brand-tiktok"></i></a>
+    <a href="https://wa.me/256788120443" class="ss-item ss-whatsapp" target="_blank" aria-label="WhatsApp"><i class="ti ti-brand-whatsapp"></i></a>
+  </div>
 
-<!-- MOBILE SOCIAL TOGGLE -->
-<button class="social-sidebar-toggle" id="socialToggle" aria-label="Social media">
-  <i class="ti ti-share"></i>
-</button>
+  <!-- MOBILE SOCIAL TOGGLE -->
+  <button class="social-sidebar-toggle" id="socialToggle" aria-label="Social media">
+    <i class="ti ti-share"></i>
+  </button>
 
-<!-- MOBILE SOCIAL POPUP -->
-<div class="social-sidebar-mobile" id="mobileSocialSidebar">
-  <a href="https://www.facebook.com/share/1H5aonoJfw/" target="_blank" style="background:#1877f2" aria-label="Facebook"><i class="ti ti-brand-facebook"></i></a>
-  <a href="#" target="_blank" style="background:#1da1f2" aria-label="Twitter"><i class="ti ti-brand-twitter"></i></a>
-  <a href="#" target="_blank" style="background:#e1306c" aria-label="Instagram"><i class="ti ti-brand-instagram"></i></a>
-  <a href="#" target="_blank" style="background:#ff0000" aria-label="YouTube"><i class="ti ti-brand-youtube"></i></a>
-  <a href="https://www.tiktok.com/@brentwood_school?is_from_webapp=1&sender_device=pc" target="_blank" style="background:#010101" aria-label="TikTok"><i class="ti ti-brand-tiktok"></i></a>
-  <a href="https://wa.me/256788120443" target="_blank" style="background:#25d366" aria-label="WhatsApp"><i class="ti ti-brand-whatsapp"></i></a>
-</div>
+  <!-- MOBILE SOCIAL POPUP -->
+  <div class="social-sidebar-mobile" id="mobileSocialSidebar">
+    <a href="https://www.facebook.com/share/1H5aonoJfw/" target="_blank" style="background:#1877f2" aria-label="Facebook"><i class="ti ti-brand-facebook"></i></a>
+    <a href="#" target="_blank" style="background:#1da1f2" aria-label="Twitter"><i class="ti ti-brand-twitter"></i></a>
+    <a href="#" target="_blank" style="background:#e1306c" aria-label="Instagram"><i class="ti ti-brand-instagram"></i></a>
+    <a href="#" target="_blank" style="background:#ff0000" aria-label="YouTube"><i class="ti ti-brand-youtube"></i></a>
+    <a href="https://www.tiktok.com/@brentwood_school?is_from_webapp=1&sender_device=pc" target="_blank" style="background:#010101" aria-label="TikTok"><i class="ti ti-brand-tiktok"></i></a>
+    <a href="https://wa.me/256788120443" target="_blank" style="background:#25d366" aria-label="WhatsApp"><i class="ti ti-brand-whatsapp"></i></a>
+  </div>
 
- <!-- NAVBAR -->
-<nav class="navbar" id="mainNav">
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html" class="active">About</a></li>
-    <li><a href="nursery.html">Nursery</a></li>
-    <li><a href="primary.html">Primary</a></li>
-    <li><a href="index.html#events">Events</a></li>
-    <li><a href="gallery.html">Gallery</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-<a href="admissions.html" class="nav-admission-badge">
-  <span class="nav-badge-pulse"></span>
-  <div class="nav-badge-inner">
-    <i class="ti ti-school"></i>
-    <div>
-      <strong>Admissions</strong>
-      <span>Now Open!</span>
+  <!-- ══════════════════════════════════════
+       TOPBAR — consistent across all pages
+  ══════════════════════════════════════ -->
+  <div class="bw-shell">
+    <div class="bw-topbar">
+      <a href="index.html" class="bw-logo">
+        <img src="images/1x.png" alt="Brentwood School"/>
+      </a>
+      <nav class="bw-nav" id="mainNav">
+        <ul class="nav-links">
+          <li><a href="index.html"><i class="ti ti-home"></i> HOME</a></li>
+          <li><a href="about.html" class="active">ABOUT</a></li>
+          <li><a href="nursery.html">NURSERY SECTION</a></li>
+          <li><a href="primary.html">PRIMARY SECTION</a></li>
+          <li><a href="admissions.html">ADMISSION</a></li>
+          <li><a href="index.html#events">EVENTS</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a href="contact.html">CONTACTS</a></li>
+        </ul>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="nursery.html">Nursery Section</a>
+      <a href="primary.html">Primary Section</a>
+      <a href="admissions.html">Admission</a>
+      <a href="index.html#events">Events</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contacts</a>
+      <a href="boarding.html">Boarding Section</a>
     </div>
   </div>
-</a>
-  <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
-    <span></span><span></span><span></span>
-  </button>
-</nav>
 
-<!-- MOBILE MENU -->
-<div class="mobile-menu" id="mobileMenu">
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="nursery.html">Nursery</a>
-  <a href="primary.html">Primary</a>
-  <a href="index.html#events">Events</a>
-  <a href="gallery.html">Gallery</a>
-  <a href="contact.html">Contact</a>
-  <a href="admissions.html" class="btn-admissions">
-    <span class="pulse-dot"></span> Admissions Open
-  </a>
-</div>
-
-  <!-- PAGE HERO -->
-  <section class="page-hero">
-    <div class="page-hero-overlay"></div>
-    <img src="images/nus.JPG" alt="About Brent Wood School" class="page-hero-img"/>
-
-    
-  <!-- LOGO — Sitting on hero video -->
-  <img src="images/1x.png" alt="Brent Wood School Logo" class="hero-logo"/>
-
-    <div class="page-hero-content">
-      <h1>About Us</h1>
-      <p>Learn who we are, what we stand for and why we do what we do</p>
-      
+  <!-- ══════════════════════════════════════
+       PAGE BANNER
+  ══════════════════════════════════════ -->
+  <section class="pg-banner">
+    <div class="pg-banner-inner">
+      <span class="pg-script">Get to know us</span>
+      <h1>ABOUT BRENTWOOD SCHOOL</h1>
+      <span class="pg-rule"></span>
+      <div class="pg-crumb">
+        <a href="index.html">Home</a>
+        <i class="ti ti-chevron-right"></i>
+        <span>About Us</span>
+      </div>
     </div>
   </section>
 
-  <!-- WHO WE ARE -->
-  <section class="about-intro">
-    <div class="about-intro-grid">
-      <div class="about-intro-img">
-        <img src="images/about2.JPG" alt="Brent Wood School"/>
-        <div class="about-intro-badge">
-          <strong>Est.</strong>
-          <span>2010</span>
-        </div>
+  <!-- ══════════════════════════════════════
+       INTRO
+  ══════════════════════════════════════ -->
+  <section class="ab-intro">
+    <div class="ab-card">
+
+      <div class="ab-tags">
+        <span class="ab-tag"><i class="ti ti-school"></i> Nursery &amp; Primary Sections</span>
+        <span class="ab-tag"><i class="ti ti-home-2"></i> Day &amp; Boarding Sections</span>
       </div>
-      <div class="about-intro-content">
-        <span class="ss-label">Who We Are</span>
-        <h2>A School Built on Quality &amp; Excellence</h2>
-        <p>
-          Brent Wood School is a private Nursery and Primary school located in Kisaasi,
-          Kampala, Uganda. We are dedicated to providing a nurturing and stimulating
-          environment where every child can thrive with no discrimination.
-        </p>
-        <p>
-          Our focus on academic excellence, creativity and character development ensures
-          a strong foundation for future and lifelong learning success. We believe every
-          child is unique and deserves a personalised, caring learning experience.
-        </p>
-        <div class="about-stats">
-          <div class="stat-item">
-            <strong>500+</strong>
-            <span>Students Enrolled</span>
+
+      <span class="ab-script">Every child is uniquely gifted</span>
+      <h2>WHO WE ARE</h2>
+      <span class="ab-rule"></span>
+
+      <div class="ab-body">
+        <p>At Brentwood School, we believe every child is uniquely gifted with the potential to achieve greatness. As a thriving nursery and primary school, we provide a dynamic and nurturing learning environment guided by the Competency-Based Curriculum (National Curriculum), where academic excellence is strengthened through creativity, exploration, practical experiences, and outdoor learning.</p>
+
+        <p>We are committed to developing well-rounded learners who are confident, disciplined, innovative, and prepared to excel in an ever-changing world. Our approach extends beyond traditional classroom learning by fostering curiosity, critical thinking, problem-solving skills, and a lifelong passion for discovery.</p>
+
+        <p>At Brentwood School, diversity is celebrated and every child is embraced as a valued member of our community. We cultivate an atmosphere of respect, inclusion, and belonging, where learners appreciate different cultures, traditions, and faiths while developing strong values of kindness, integrity, responsibility, and compassion.</p>
+
+        <p>Through a rich blend of academic learning, digital discovery, hands-on activities, outdoor experiences, and real-world applications, we empower learners to become independent thinkers, effective communicators, and confident leaders. Our dedicated and passionate educators provide personalised guidance and encouragement, ensuring each child is supported to discover their talents and reach their full potential.</p>
+
+        <p>At Brentwood School, we do more than educate — we inspire, nurture, and prepare learners to become responsible, creative, and compassionate global citizens.</p>
+      </div>
+
+      <div class="ab-quote">
+        <i class="ti ti-quote"></i>
+        <p>Brentwood School — Inspiring excellence, building character, and empowering the leaders of tomorrow.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       MOTTO BAND
+  ══════════════════════════════════════ -->
+  <section class="ab-motto">
+    <div class="ab-motto-inner">
+      <span class="ab-motto-label">OUR MOTTO</span>
+      <h2>Quality and Excellence</h2>
+      <p>At Brentwood School, Quality and Excellence reflects our commitment to delivering exceptional education, inspiring achievement, and nurturing every learner's unique potential. We uphold high standards in academics, character development, and personal growth, empowering learners to become confident, responsible, and successful individuals.</p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       COMMITMENT · MISSION · VISION
+  ══════════════════════════════════════ -->
+  <section class="ab-pillars">
+    <div class="ab-sec-head">
+      <span class="ab-script">What drives us</span>
+      <h2>OUR COMMITMENT, MISSION &amp; VISION</h2>
+      <span class="ab-rule ab-rule-center"></span>
+    </div>
+
+    <div class="ab-pillar-grid">
+
+      <div class="ab-pillar">
+        <span class="ab-pillar-icon"><i class="ti ti-hand-stop"></i></span>
+        <h3>OUR COMMITMENT</h3>
+        <p>At Brentwood School, we are committed to delivering quality education that inspires academic excellence, strong character, and holistic development.</p>
+      </div>
+
+      <div class="ab-pillar ab-pillar-gold">
+        <span class="ab-pillar-icon"><i class="ti ti-target-arrow"></i></span>
+        <h3>OUR MISSION</h3>
+        <p>To empower every learner through quality education, innovative teaching, and holistic development that builds knowledge, skills, values, and confidence for a successful future.</p>
+      </div>
+
+      <div class="ab-pillar">
+        <span class="ab-pillar-icon"><i class="ti ti-eye"></i></span>
+        <h3>OUR VISION</h3>
+        <p>To be a transformative learning community that sets the standard for quality education, nurturing intellectual curiosity, creativity, leadership, and strong moral character.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       CORE VALUES
+  ══════════════════════════════════════ -->
+  <section class="ab-values">
+    <div class="ab-sec-head ab-sec-head-light">
+      <span class="ab-script">The foundation of everything we do</span>
+      <h2>OUR CORE VALUES</h2>
+      <span class="ab-rule ab-rule-center"></span>
+    </div>
+
+    <div class="ab-val-grid">
+
+      <!-- Diversity -->
+      <div class="ab-val-card">
+        <div class="ab-val-head">
+          <span class="ab-val-icon"><i class="ti ti-users-group"></i></span>
+          <h3>Diversity Values</h3>
+        </div>
+        <ul>
+          <li><strong>Inclusion</strong> — Ensuring every learner feels valued and accepted</li>
+          <li><strong>Diversity</strong> — Celebrating different cultures, backgrounds, and perspectives</li>
+          <li><strong>Unity</strong> — Building a strong sense of togetherness</li>
+          <li><strong>Belonging</strong> — Creating a welcoming school community</li>
+          <li><strong>Tolerance</strong> — Respecting differences and opinions</li>
+          <li><strong>Cultural Awareness</strong> — Appreciating traditions and heritage</li>
+          <li><strong>Teamwork</strong> — Achieving goals together</li>
+          <li><strong>Compassion</strong> — Supporting and caring for others</li>
+          <li><strong>Citizenship</strong> — Developing responsible members of society</li>
+        </ul>
+      </div>
+
+      <!-- Academic -->
+      <div class="ab-val-card">
+        <div class="ab-val-head">
+          <span class="ab-val-icon"><i class="ti ti-school"></i></span>
+          <h3>Academic &amp; Learning Values</h3>
+        </div>
+        <ul>
+          <li><strong>Academic Excellence</strong> — Striving for the highest standards in learning and achievement</li>
+          <li><strong>Curiosity</strong> — Developing a desire to explore, question, and discover</li>
+          <li><strong>Creativity</strong> — Encouraging innovation and original thinking</li>
+          <li><strong>Critical Thinking</strong> — Developing the ability to analyse, evaluate, and solve problems</li>
+          <li><strong>Lifelong Learning</strong> — Inspiring continuous growth and discovery</li>
+          <li><strong>Innovation</strong> — Embracing new ideas and technology</li>
+          <li><strong>Collaboration</strong> — Working effectively with others</li>
+          <li><strong>Perseverance</strong> — Persisting through challenges and difficulties</li>
+          <li><strong>Achievement</strong> — Celebrating progress and success</li>
+        </ul>
+      </div>
+
+      <!-- Character -->
+      <div class="ab-val-card">
+        <div class="ab-val-head">
+          <span class="ab-val-icon"><i class="ti ti-shield-check"></i></span>
+          <h3>Character Development Values</h3>
+        </div>
+        <ul>
+          <li><strong>Integrity</strong> — Doing what is right with honesty and strong moral principles</li>
+          <li><strong>Respect</strong> — Valuing oneself and others</li>
+          <li><strong>Responsibility</strong> — Taking ownership of actions and commitments</li>
+          <li><strong>Discipline</strong> — Demonstrating self-control and positive behaviour</li>
+          <li><strong>Confidence</strong> — Believing in oneself and one's abilities</li>
+          <li><strong>Self-Leadership</strong> — Taking initiative and making positive choices</li>
+          <li><strong>Resilience</strong> — Recovering from challenges and growing stronger</li>
+          <li><strong>Kindness</strong> — Showing care and compassion towards others</li>
+          <li><strong>Empathy</strong> — Understanding and appreciating others' feelings</li>
+          <li><strong>Humility</strong> — Showing modesty and willingness to learn</li>
+        </ul>
+      </div>
+
+      <!-- Faith -->
+      <div class="ab-val-card">
+        <div class="ab-val-head">
+          <span class="ab-val-icon"><i class="ti ti-hand-love-you"></i></span>
+          <h3>Faith Values</h3>
+        </div>
+        <ul>
+          <li><strong>Faith</strong> — Nurturing spiritual growth and values</li>
+          <li><strong>Love</strong> — Demonstrating care and kindness</li>
+          <li><strong>Peace</strong> — Promoting harmony and understanding</li>
+          <li><strong>Forgiveness</strong> — Encouraging reconciliation and growth</li>
+          <li><strong>Trust</strong> — Building honesty and reliability</li>
+          <li><strong>Gratitude</strong> — Appreciating people and opportunities</li>
+          <li><strong>Stewardship</strong> — Caring for people and the environment</li>
+        </ul>
+      </div>
+
+      <!-- Digital -->
+      <div class="ab-val-card ab-val-wide">
+        <div class="ab-val-head">
+          <span class="ab-val-icon"><i class="ti ti-device-laptop"></i></span>
+          <h3>Digital Values</h3>
+        </div>
+        <ul class="ab-val-two">
+          <li><strong>Digital Literacy</strong> — Building confidence in using computers and digital tools</li>
+          <li><strong>Responsible Digital Citizenship</strong> — Using technology safely, ethically, and respectfully</li>
+          <li><strong>Technology Integration</strong> — Enhancing learning through meaningful use of technology</li>
+          <li><strong>Digital Confidence</strong> — Encouraging learners to explore, create, and innovate with technology</li>
+          <li><strong>Future-Ready Skills</strong> — Equipping learners with essential digital skills for tomorrow</li>
+          <li><strong>Safe Online Practices</strong> — Promoting cyber safety and responsible internet use</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       CTA
+  ══════════════════════════════════════ -->
+  <section class="ab-cta">
+    <div class="ab-cta-inner">
+      <h2>Ready to join the Brentwood family?</h2>
+      <p>Admissions are open for our Nursery and Primary sections — Day and Boarding.</p>
+      <div class="ab-cta-btns">
+        <a href="admissions.html" class="wc-btn">
+          APPLY NOW
+          <span class="wc-btn-circle"><i class="ti ti-arrow-right"></i></span>
+        </a>
+        <a href="contact.html" class="ab-btn-ghost">TALK TO US</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer class="bw-footer">
+    <div class="bwf-grid">
+
+      <div class="bwf-col bwf-app">
+        <div class="bwf-phones">
+          <div class="bwf-ph">
+            <img src="images/1x.png" alt=""/>
+            <div class="bwf-ph-grid">
+              <i class="ti ti-bell"></i><i class="ti ti-book"></i>
+              <i class="ti ti-calendar"></i><i class="ti ti-file"></i>
+              <i class="ti ti-checkbox"></i><i class="ti ti-chart-bar"></i>
+            </div>
           </div>
-          <div class="stat-item">
-            <strong>40+</strong>
-            <span>Qualified Teachers</span>
+          <div class="bwf-ph">
+            <img src="images/1x.png" alt=""/>
+            <div class="bwf-ph-grid">
+              <i class="ti ti-clipboard"></i><i class="ti ti-message"></i>
+              <i class="ti ti-users"></i><i class="ti ti-star"></i>
+              <i class="ti ti-award"></i><i class="ti ti-settings"></i>
+            </div>
           </div>
-          <div class="stat-item">
-            <strong>15+</strong>
-            <span>Years of Excellence</span>
+        </div>
+
+        <div class="bwf-app-text">
+          <h4>SCHOOL APP</h4>
+          <p>Stay connected with your child's learning journey.</p>
+          <ul>
+            <li><i class="ti ti-circle-check"></i> Announcements</li>
+            <li><i class="ti ti-circle-check"></i> Homework &amp; Assignments</li>
+            <li><i class="ti ti-circle-check"></i> Events &amp; Calendar</li>
+            <li><i class="ti ti-circle-check"></i> Attendance</li>
+            <li><i class="ti ti-circle-check"></i> Reports &amp; Updates</li>
+          </ul>
+          <div class="bwf-store">
+            <a href="#"><i class="ti ti-brand-google-play"></i><span><small>GET IT ON</small>Google Play</span></a>
+            <a href="#"><i class="ti ti-brand-apple"></i><span><small>Download on the</small>App Store</span></a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- MISSION VISION VALUES -->
-  <section class="mvv-section">
-    <div class="section-header">
-      <h2>Our Mission, Vision &amp; Values</h2>
-      <p>The principles that guide everything we do</p>
-    </div>
-    <div class="mvv-grid">
-
-      <div class="mvv-card mvv-blue">
-        <div class="mvv-icon"><i class="ti ti-target"></i></div>
-        <h3>Our Mission</h3>
-        <p>
-          To provide a high quality, inclusive and stimulating education that empowers
-          every child to reach their full potential academically, socially and emotionally.
-        </p>
-      </div>
-
-      <div class="mvv-card mvv-gold">
-        <div class="mvv-icon"><i class="ti ti-eye"></i></div>
-        <h3>Our Vision</h3>
-        <p>
-          To be the leading nursery and primary school in Uganda, recognised for academic
-          excellence, character formation and the holistic development of every learner.
-        </p>
-      </div>
-
-      <div class="mvv-card mvv-red">
-        <div class="mvv-icon"><i class="ti ti-heart"></i></div>
-        <h3>Our Values</h3>
-        <p>
-          Integrity, excellence, respect, inclusivity and compassion form the foundation
-          of our school community and guide every interaction between staff, pupils and parents.
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- WHY CHOOSE US -->
-  <section class="features" id="academic">
-    <div class="section-header">
-      <h2>Why Choose Brent Wood?</h2>
-      <p>A school built on excellence, care and purpose</p>
-    </div>
-    <div class="features-grid">
-
-      <a href="#" class="feature-card fc-blue">
-        <div class="fc-icon"><i class="ti ti-certificate"></i></div>
-        <h3>Academic Excellence</h3>
-        <p>Inspiring curious, confident learners through a rigorous and balanced curriculum.</p>
-        <span class="fc-link">Learn More <i class="ti ti-arrow-right"></i></span>
-      </a>
-
-      <a href="#" class="feature-card fc-green" id="teachers">
-        <div class="fc-icon"><i class="ti ti-chalkboard"></i></div>
-        <h3>Expert Teachers</h3>
-        <p>Skilled, caring and passionate educators dedicated to every child's growth.</p>
-        <span class="fc-link">Learn More <i class="ti ti-arrow-right"></i></span>
-      </a>
-
-      <a href="#" class="feature-card fc-red" id="facilities">
-        <div class="fc-icon"><i class="ti ti-building-community"></i></div>
-        <h3>Modern Facilities</h3>
-        <p>Safe, bright and engaging spaces designed for learning and exploration.</p>
-        <span class="fc-link">Learn More <i class="ti ti-arrow-right"></i></span>
-      </a>
-
-      <a href="#" class="feature-card fc-yellow" id="curriculum">
-        <div class="fc-icon"><i class="ti ti-puzzle"></i></div>
-        <h3>Enriching Curriculum</h3>
-        <p>A learning experience that inspires curiosity, creativity and lasting joy.</p>
-        <span class="fc-link">Learn More <i class="ti ti-arrow-right"></i></span>
-      </a>
-
-    </div>
-  </section>
-
-  <!-- MEET THE TEAM -->
-  <section class="team-section">
-    <div class="section-header">
-      <h2>Meet Our Leadership</h2>
-      <p>The dedicated team behind Brent Wood School</p>
-    </div>
-    <div class="team-grid">
-
-      <div class="team-card">
-        <div class="team-img">
-          <img src="images/p1.JPG" alt="Head Teacher"/>
-        </div>
-        <div class="team-info">
-          <h4>Mrs. Sarah Nakato</h4>
-          <span>Head Teacher</span>
-          <p>Over 20 years of experience in education leadership and child development.</p>
-        </div>
-      </div>
-
-      <div class="team-card">
-        <div class="team-img">
-          <img src="images/BW (26).jpg" alt="Deputy Head"/>
-        </div>
-        <div class="team-info">
-          <h4>Mr. David Ssemakula</h4>
-          <span>Deputy Head Teacher</span>
-          <p>Passionate about curriculum development and creating joyful learning experiences.</p>
-        </div>
-      </div>
-
-      <div class="team-card">
-        <div class="team-img">
-          <img src="images/p4.JPG" alt="Head of Nursery"/>
-        </div>
-        <div class="team-info">
-          <h4>Ms. Grace Apio</h4>
-          <span>Head of Nursery</span>
-          <p>Dedicated to nurturing the youngest learners through play-based education.</p>
-        </div>
-      </div>
-
-      <div class="team-card">
-        <div class="team-img">
-          <img src="images/p5.JPG" alt="Head of Primary"/>
-        </div>
-        <div class="team-info">
-          <h4>Mr. Joseph Okello</h4>
-          <span>Head of Primary</span>
-          <p>Committed to academic rigour and preparing pupils for national examinations.</p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
- <!-- ⑪ FOOTER -->
-  <footer class="footer">
-    <div class="footer-top">
-      <div class="footer-col">
-        <h4>About Us</h4>
-        <p class="footer-about">
-          Providing quality education and nurturing every child's potential in a safe,
-          inclusive and stimulating environment since our founding.
-        </p>
-    
-      </div>
-      <div class="footer-col">
-        <h4>Contact Us</h4>
-        <ul class="footer-contact">
+      <div class="bwf-col">
+        <h4>GET IN TOUCH</h4>
+        <ul class="bwf-contact">
           <li>
-            <i class="ti ti-map-pin"></i>
-            <span>Kisaasi, Ssebagala Road, Off Bukoto Kisaasi Road, Kampala, Uganda</span>
+            <span class="bwf-ic bwf-ic-navy"><i class="ti ti-phone"></i></span>
+            <span>+256 &ndash; 752998618 / +256 788120443</span>
           </li>
           <li>
-            <i class="ti ti-phone"></i>
-            <span>+256 788 120 443 / +256 755 361 559</span>
+            <span class="bwf-ic bwf-ic-green"><i class="ti ti-brand-whatsapp"></i></span>
+            <span>0788120443</span>
           </li>
           <li>
-            <i class="ti ti-mail"></i>
-            <span>brentwoodschoolug@gmail.com</span>
+            <span class="bwf-ic bwf-ic-navy"><i class="ti ti-mail"></i></span>
+            <span>brentwoodschug@gmail.com</span>
+          </li>
+          <li>
+            <span class="bwf-ic bwf-ic-navy"><i class="ti ti-map-pin"></i></span>
+            <span>Kisaasi, Ssebagala road.<br/>Uganda, Kampala.</span>
           </li>
         </ul>
       </div>
-   
+
+      <div class="bwf-col">
+        <h4>FIND US ON MAP</h4>
+        <div class="bwf-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7572!2d32.5899!3d0.3476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwMjAnNTEuNCJOIDMywrAzNSczNi40IkU!5e0!3m2!1sen!2sug!4v1234567890"
+            allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Brentwood School Location">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="bwf-col">
+        <h4>FOLLOW US</h4>
+        <div class="bwf-social">
+          <a href="https://www.facebook.com/share/1H5aonoJfw/" target="_blank">
+            <span class="bwf-sic" style="background:#1877f2"><i class="ti ti-brand-facebook"></i></span>Facebook
+          </a>
+          <a href="#" target="_blank">
+            <span class="bwf-sic bwf-ig"><i class="ti ti-brand-instagram"></i></span>Instagram
+          </a>
+          <a href="#" target="_blank">
+            <span class="bwf-sic" style="background:#000"><i class="ti ti-brand-x"></i></span>X (Twitter)
+          </a>
+          <a href="https://www.tiktok.com/@brentwood_school?is_from_webapp=1&sender_device=pc" target="_blank">
+            <span class="bwf-sic" style="background:#000"><i class="ti ti-brand-tiktok"></i></span>TikTok
+          </a>
+          <a href="https://wa.me/256788120443" target="_blank" class="bwf-wide">
+            <span class="bwf-sic" style="background:#25d366"><i class="ti ti-brand-whatsapp"></i></span>WhatsApp 0788120443
+          </a>
+        </div>
+      </div>
+
     </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 BrentWood School – Nursery &amp; Primary. All rights reserved.</p>
+
+    <div class="bwf-bottom">
+      <p>&copy; 2026 Brentwood School – Nursery &amp; Primary. All rights reserved.</p>
       <div class="footer-designed">
         <span>Designed &amp; Developed by</span>
         <div class="designer-info">
-         
           <div>
             <strong>Eng. Patrick</strong>
-            <a href="tel:+256702002442">
-              <i class="ti ti-phone"></i> 0702 002 442
-            </a>
+            <a href="tel:+256702002442"><i class="ti ti-phone"></i> 0702 002 442</a>
           </div>
         </div>
       </div>
     </div>
   </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/256788120443" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <i class="ti ti-brand-whatsapp"></i>
+  </a>
 
   <!-- Back to Top -->
   <button class="back-to-top" id="backToTop" aria-label="Back to top">
